@@ -1,0 +1,116 @@
+.nav {
+     font-family: sans-serif;
+     display: flex;
+     position: fixed;
+     align-items: center;
+     justify-content: space-between;
+     background: var(--color-light-dark);
+     width: 100%;
+     padding: 15px 20px;
+     z-index: 1000;
+}
+
+#navlogo {
+     font-weight: 700;
+     font-size: 25px;
+     color: var(--color-text);
+     text-transform: uppercase;
+     transition: all 0.2s ease;
+}
+
+#navlogo:hover {
+     color: var(--main-color);
+}
+
+#navbar {
+     display: flex;
+     align-items: center;
+}
+
+#navbar li {
+     list-style: none;
+     padding: 0 20px;
+     position: relative;
+}
+
+#navbar li a {
+     text-decoration: none;
+     font-size: 15px;
+     font-weight: 700;
+     color: var(--color-text);
+     text-transform: uppercase;
+     transition: 0.2s ease-in-out;
+}
+
+#navbar li a:hover {
+     color: var(--main-color);
+}
+
+#navbar li a:hover::after {
+     content: "";
+     width: 30%;
+     height: 2px;
+     background: var(--main-color);
+     position: absolute;
+     bottom: -4px;
+     left: 20px;
+}
+
+#mobile {
+     display: none;
+}
+
+#mobile i {
+     color: var(--color-text);
+     align-items: center;
+}
+
+@media screen and (max-width: 769px) {
+     .mobile {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          position: fixed;
+          top: 40px;
+          right: -100%;
+          width: 210px;
+          max-width: 70%;
+          height: 100%;
+          background: var(--color-light-dark);
+          padding: 40px 0 0 10px;
+          z-index: 100;
+          transition: 0.3s ease-in-out;
+     }
+
+     .mobileActive {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          position: fixed;
+          top: 40px;
+          right: 0px;
+          width: 210px;
+          max-width: 70%;
+          height: 100%;
+          background: var(--color-light-dark);
+          padding: 40px 0 0 10px;
+          z-index: 100;
+          transition: 0.3s ease-in-out;
+     }
+
+     #navbar li {
+          margin-bottom: 25px;
+          z-index: 100;
+     }
+
+     #mobile {
+          display: block;
+     }
+
+     #mobile i {
+          font-size: 24px;
+          cursor: pointer;
+     }
+}

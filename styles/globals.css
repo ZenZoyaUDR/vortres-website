@@ -1,3 +1,22 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Root Variables */
+:root {
+  --accent: #171c22;
+  --accent-trans: rgba(19, 23, 28, 0.985);
+  --accent-alt: #41464d;
+  --main-color: #4361ff;
+  --main-color-dark: #2e334d;
+  --main-color-alt: #ccd4ff;
+  --main-color-dark-trans: rgba(46, 51, 77, 0.985);
+  --color-text: #eaeaea;
+  --color-text-dark: #8f9297;
+  --color-light-dark: #24262c;
+  --color-shadow: rgba(0, 0, 0, 0.400);
+}
+
+/* Misc */
 html,
 body {
   padding: 0;
@@ -19,8 +38,9 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
-    color: white;
-    background: black;
+    color: var(--color-text);
+    background: var(--accent);
   }
 }
