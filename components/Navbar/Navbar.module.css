@@ -6,7 +6,7 @@
      justify-content: space-between;
      background: var(--color-light-dark);
      width: 100%;
-     padding: 15px 20px;
+     padding: 17px 15px;
      z-index: 1000;
 }
 
@@ -72,7 +72,7 @@
           align-items: flex-start;
           justify-content: flex-start;
           position: fixed;
-          top: 40px;
+          top: 30px;
           right: -100%;
           width: 210px;
           max-width: 70%;
@@ -89,7 +89,7 @@
           align-items: flex-start;
           justify-content: flex-start;
           position: fixed;
-          top: 40px;
+          top: 30px;
           right: 0px;
           width: 210px;
           max-width: 70%;
