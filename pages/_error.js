@@ -1,6 +1,8 @@
+import style from '../style/Error.module.css'
+
 function Error({ statusCode }) {
   return (
-    <div className="error-countainer">
+    <div className={style.error-countainer}>
       {statusCode
         ? <p>An error {statusCode} occurred on the server</p>
         : <p>An error occurred on client</p>}
