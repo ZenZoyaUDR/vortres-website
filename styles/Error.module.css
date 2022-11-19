@@ -1,8 +1,8 @@
-.error-container {
+.errorCountainer {
   padding: 0 2rem;
 }
 
-.error-countainer {
+.errorCountainer {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
