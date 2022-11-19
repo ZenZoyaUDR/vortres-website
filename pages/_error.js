@@ -1,10 +1,10 @@
 function Error({ statusCode }) {
   return (
-    <p>
+    <div className="error-countainer">
       {statusCode
-        ? `An error ${statusCode} occurred on server`
-        : 'An error occurred on client'}
-    </p>
+        ? <p>An error ${errorCode} occurred on the server</p>
+        : <p>An error occurred on client</p>}
+    </div>
   )
 }
 
