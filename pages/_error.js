@@ -2,7 +2,7 @@ function Error({ statusCode }) {
   return (
     <div className="error-countainer">
       {statusCode
-        ? <p>An error ${errorCode} occurred on the server</p>
+        ? <p>An error ${statusCode} occurred on the server</p>
         : <p>An error occurred on client</p>}
     </div>
   )
