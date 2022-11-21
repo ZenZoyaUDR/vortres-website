@@ -16,4 +16,5 @@
 
 .logo {
   padding-left: 5px;
+  color: var(--color-text);
 }
