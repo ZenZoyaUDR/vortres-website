@@ -8,6 +8,7 @@ import ServerReqAPI from '../FetchData/FetchServerAPI'
 import Loading from '../components/Loading/Loading'
 import Navbar from '../components/Navbar/Navbar'
 import HeroSection from '../components/HeroSection/HeroSection'
+import Footer from '../components/Footer/Footer'
 
 export default function Home() {
   const { loading, player } = ServerReqAPI()
@@ -38,6 +39,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }
