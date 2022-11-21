@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import style from './Footer.module.css'
 
 function Footer() {
