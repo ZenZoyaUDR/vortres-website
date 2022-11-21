@@ -1,0 +1,45 @@
+.heroContainer {
+     background: url('../../../public/Pano-img-3.jpg') center center/cover no-repeat;
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     box-shadow: drop-shadow(16px 16px 10px black var(--color-shadow));
+     object-fit: contain;
+}
+
+.heroContainer>h1 {
+     color: var(--color-text);
+     text-align: center;
+     font-size: 80px;
+     margin-top: -100px;
+}
+
+.heroContainer>p {
+     text-align: center;
+     margin-top: 8px;
+     color: var(--color-text);
+     font-size: 32px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 950px) {
+     .heroContainer>h1 {
+          font-size: 70px;
+          margin-top: -150px;
+     }
+}
+
+@media screen and (max-width: 800px) {
+     .heroContainer>h1 {
+          font-size: 50px;
+          margin-top: -100px;
+     }
+
+     .heroContainer>p {
+          font-size: 30px;
+     }
+}

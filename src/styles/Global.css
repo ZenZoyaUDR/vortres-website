@@ -6,41 +6,40 @@
   --accent: #171c22;
   --accent-trans: rgba(19, 23, 28, 0.985);
   --accent-alt: #41464d;
-  --main-color: #4361ff;
+  --main-color: #4766fd;
   --main-color-dark: #2e334d;
   --main-color-alt: #ccd4ff;
   --main-color-dark-trans: rgba(46, 51, 77, 0.985);
   --color-text: #eaeaea;
   --color-text-dark: #8f9297;
   --color-light-dark: #24262c;
+  --color-warning: #ff4646;
   --color-shadow: rgba(0, 0, 0, 0.400);
 }
 
 /* Misc */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Noto Sans', sans-serif;
+
+  /* Other things */
+  scrollbar-width: none;
+}
+
 html,
 body {
+  background: var(--accent);
+  color: var(--color-text);
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-
-  body {
-    color: var(--color-text);
-    background: var(--accent);
-  }
 }

@@ -6,7 +6,7 @@
      justify-content: space-between;
      background: var(--color-light-dark);
      width: 100%;
-     padding: 20px 15px;
+     padding: 17px 15px;
      z-index: 1000;
 }
 
@@ -29,7 +29,7 @@
 
 #navbar li {
      list-style: none;
-     padding: 0 20px;
+     padding: 0 15px;
      position: relative;
 }
 
@@ -48,12 +48,12 @@
 
 #navbar li a:hover::after {
      content: "";
-     width: 30%;
+     width: 35%;
      height: 2px;
      background: var(--main-color);
      position: absolute;
-     bottom: -4px;
-     left: 20px;
+     bottom: -3px;
+     left: 15px;
 }
 
 #mobile {
@@ -65,14 +65,14 @@
      align-items: center;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 800px) {
      .mobile {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           justify-content: flex-start;
           position: fixed;
-          top: 50px;
+          top: 68px;
           right: -100%;
           width: 200px;
           max-width: 70%;
@@ -89,7 +89,7 @@
           align-items: flex-start;
           justify-content: flex-start;
           position: fixed;
-          top: 50px;
+          top: 68px;
           right: 0px;
           width: 200px;
           max-width: 70%;
@@ -110,7 +110,7 @@
      }
 
      #mobile i {
-          font-size: 24px;
+          font-size: 25px;
           cursor: pointer;
      }
 }
