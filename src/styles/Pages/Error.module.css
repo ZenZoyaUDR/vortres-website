@@ -1,5 +1,5 @@
 .errorCountainer {
-  background: 
+  background: linear-gradient(to right, red , yellow);
   padding: 0 2rem;
   min-height: 100vh;
   padding: 1rem 0;
