@@ -2,7 +2,7 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid linear-gradient(var(--color-text), var(--main-color), var(--color-text));
+  border-top: 1px solid linear-gradient(to right, var(--color-text), var(--main-color), var(--color-text));
   justify-content: center;
   align-items: center;
 }
