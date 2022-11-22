@@ -22,7 +22,7 @@
 
 .sublineInc {
      position: fixed;
-     background: var(--main-color);
+     background: linear-gradient(to right, var(--color-text), var(--main-color));
      height: 2px;
      z-index: 1500;
 }
