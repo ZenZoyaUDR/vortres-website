@@ -5,7 +5,7 @@ function Footer() {
      return (
           <footer className={style.footer}>
         <a
-          href="https://google.com/"
+          href="https://vercel.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
