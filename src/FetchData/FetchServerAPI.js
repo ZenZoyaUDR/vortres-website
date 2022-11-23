@@ -20,6 +20,7 @@ export default function ServerReqAPI() {
                setLoading(false)
           }).catch(err => {
                if (axios.isCancel(err)) return
+               console.log(err)
                setError(true)
                setLoading(false)
           })
