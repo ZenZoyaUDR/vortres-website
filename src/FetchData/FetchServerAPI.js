@@ -17,10 +17,12 @@ export default function ServerReqAPI() {
                cancelToken: new axios.CancelToken(c => cancel = c)
           }).then(res => {
                setPlayer(res.data.players.online)
-               setLoading(true)
-          }).catch(e => {
-               if (axios.isCancel(e)) return
+               setLoading(false)
+          }).catch(err => {
+               if (axios.isCancel(err)) return
+               console.log(err)
                setError(true)
+               setLoading(false)
           })
 
           return () => cancel()
