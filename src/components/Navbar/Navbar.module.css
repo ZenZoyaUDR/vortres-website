@@ -80,7 +80,7 @@
           background: var(--color-light-dark);
           padding: 40px 0 0 10px;
           z-index: 100;
-          transition: 0.3s ease-in-out;
+          transition: 0.1s ease-in-out;
      }
 
      .mobileActive {
@@ -97,7 +97,7 @@
           background: var(--color-light-dark);
           padding: 40px 0 0 10px;
           z-index: 100;
-          transition: 0.3s ease-in-out;
+          transition: 0.1s ease-in-out;
      }
 
      #navbar li {
