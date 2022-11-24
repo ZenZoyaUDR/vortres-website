@@ -13,16 +13,16 @@
 .error_message {
   color: var(--color-warning);
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 700;
   padding-bottom: 25px;
   text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .error_message {
     color: var(--color-warning);
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     padding-bottom: 25px;
     text-align: center;
   }
