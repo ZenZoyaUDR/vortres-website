@@ -1,4 +1,6 @@
-.footer_container {}
+.footer_container {
+  padding-top: 100px;
+}
 
 .footer {
   display: flex;
