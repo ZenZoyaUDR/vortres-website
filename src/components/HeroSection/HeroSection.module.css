@@ -33,7 +33,7 @@
      }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
      .heroContainer>h1 {
           font-size: 50px;
           margin-top: -100px;
