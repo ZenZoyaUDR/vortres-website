@@ -3,7 +3,7 @@ import style from './Footer.module.css'
 
 function Footer() {
   return (
-    <div className={style.footer_continer}>
+    <div className={style.footer_container}>
     <footer className={style.footer}>
       <a
         href="https://vercel.com/"
