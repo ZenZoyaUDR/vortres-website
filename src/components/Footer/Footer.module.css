@@ -1,8 +1,9 @@
+.footer_container {}
+
 .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  padding-top: 100px;
   border-top: 1px solid var(--main-color);
   justify-content: center;
   align-items: center;
