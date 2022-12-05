@@ -22,6 +22,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
+      <HeroSection />
 
       <div className={style.cardContainer}>
         <div className={style.cardOuter}>
