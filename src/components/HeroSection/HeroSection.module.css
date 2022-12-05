@@ -1,6 +1,6 @@
 .heroContainer {
      background: url('../../../public/Pano-img-3.jpg') center center/cover no-repeat;
-     height: 35vh;
+     height: 70vh;
      width: 100%;
      display: flex;
      flex-direction: column;
