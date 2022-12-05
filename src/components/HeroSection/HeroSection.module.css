@@ -1,5 +1,5 @@
 .heroContainer {
-     height: 65vh;
+     height: 70vh;
      width: 100%;
      display: flex;
      flex-direction: column;
@@ -12,7 +12,7 @@
 .heroContainer>h1 {
      color: var(--color-text);
      text-align: center;
-     font-size: 60px;
+     font-size: 70px;
      margin-top: -100px;
 }
 
@@ -27,14 +27,14 @@
 
 @media screen and (max-width: 950px) {
      .heroContainer>h1 {
-          font-size: 50px;
+          font-size: 60px;
           margin-top: -150px;
      }
 }
 
 @media screen and (max-width: 500px) {
      .heroContainer>h1 {
-          font-size: 40px;
+          font-size: 50px;
           margin-top: -100px;
      }
 
