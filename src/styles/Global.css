@@ -34,8 +34,14 @@ body {
   background-image: linear-gradient(
   0deg,
   hsl(213deg 19% 11%) 14%,
-  hsl(233deg 43% 37%) 90%,
-  hsl(230deg 98% 64%) 100%
+  hsl(229deg 28% 18%) 58%,
+  hsl(233deg 34% 24%) 74%,
+  hsl(233deg 39% 30%) 84%,
+  hsl(233deg 43% 37%) 91%,
+  hsl(232deg 47% 44%) 96%,
+  hsl(231deg 51% 50%) 100%,
+  hsl(231deg 70% 57%) 101%,
+  hsl(230deg 98% 64%) 101%
   );
   color: var(--color-text);
   padding: 0;
