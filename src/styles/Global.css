@@ -31,7 +31,7 @@
 
 html,
 body {
-  background-image: var(--main-color-dark);
+  background: var(--main-color-dark);
   color: var(--color-text);
   padding: 0;
   margin: 0;
