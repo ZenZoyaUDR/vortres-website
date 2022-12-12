@@ -45,4 +45,7 @@ export default function Home() {
       <Footer />
     </>
   )
+  root.render(element);
 }
+
+setInterval(Home, 1000);
