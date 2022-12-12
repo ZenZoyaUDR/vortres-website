@@ -30,6 +30,4 @@ export default function ServerReqAPI() {
      return { loading, error, player }
 }
 
-const timer = setTimeout(() => {
-   ServerReqAPI()
-}, 3000);
+setInterval(ServerReqAPI, 1000);
