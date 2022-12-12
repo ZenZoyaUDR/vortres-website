@@ -12,6 +12,9 @@ import Footer from '../components/Footer/Footer'
 
 export default function Home() {
   const { loading, player } = ServerReqAPI()
+  const timer = setTimeout(() => {
+     ServerReqAPI()
+  }, 3000);
 
   return (
     <>
