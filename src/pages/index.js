@@ -11,17 +11,7 @@ import HeroSection from '../components/HeroSection/HeroSection'
 import Footer from '../components/Footer/Footer'
 
 export default function Home() {
-  const [data, setData] = useState();
-  const [refreshToken, setRefreshToken] = useState(Math.random());
-  
-  useEffect(() => {
-    ServerReqAPI()
-      .then(setData)
-      .finally(() => {
-        // Update refreshToken after 3 seconds so this event will re-trigger and update the data
-        setTimeout(() => setRefreshToken(Math.random()), 3000);
-      });
-  }, [refreshToken]);
+  const { loading, player } = ServerReqAPI()
 
   return (
     <>
@@ -38,7 +28,7 @@ export default function Home() {
         <div className={style.cardOuter}>
           <div className={style.cardInner} id={style.online}>
             <p className={style.olpTitle}>Server Status</p>
-            <p className={style.olpPlayer}>{data?.player} Players Online</p>
+            <p className={style.olpPlayer}>{player} Players Online</p>
           </div>
         </div>
 
