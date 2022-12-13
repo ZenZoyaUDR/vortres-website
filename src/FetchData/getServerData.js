@@ -29,3 +29,7 @@ export default function getAPIData() {
 
      return { loading, error, player }
 }
+
+const timer = setTimeout(() => {
+    getAPIData()
+ }, 5000);
