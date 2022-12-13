@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
-export default function ServerReqAPI() {
+export default function getAPIData() {
      const [loading, setLoading] = useState(true);
      const [error, setError] = useState(false);
      const [player, setPlayer] = useState("-");
