@@ -31,23 +31,7 @@
 
 html,
 body {
-  background-image: linear-gradient(
-  0deg,
-  hsl(213deg 19% 11%) 14%,
-  hsl(226deg 25% 15%) 48%,
-  hsl(231deg 30% 19%) 62%,
-  hsl(232deg 34% 23%) 72%,
-  hsl(233deg 37% 27%) 79%,
-  hsl(233deg 40% 31%) 85%,
-  hsl(233deg 42% 35%) 89%,
-  hsl(233deg 44% 39%) 93%,
-  hsl(232deg 47% 43%) 96%,
-  hsl(232deg 49% 47%) 98%,
-  hsl(231deg 53% 51%) 100%,
-  hsl(231deg 65% 55%) 101%,
-  hsl(230deg 80% 59%) 102%,
-  hsl(230deg 98% 64%) 101%
-  );
+  background: var(--main-color-dark);
   color: var(--color-text);
   padding: 0;
   margin: 0;

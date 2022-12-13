@@ -2,7 +2,7 @@ import Head from 'next/head'
 import style from '../styles/Pages/Home.module.css'
 
 // API
-import ServerReqAPI from '../FetchData/FetchServerAPI'
+import getAPIData from '../fetch/fetchServerAPI'
 
 // Components
 import Loading from '../components/Loading/Loading'
@@ -11,7 +11,7 @@ import HeroSection from '../components/HeroSection/HeroSection'
 import Footer from '../components/Footer/Footer'
 
 export default function Home() {
-  const { loading, player } = ServerReqAPI()
+  const { loading, player } = getAPIData()
 
   return (
     <>
