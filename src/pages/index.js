@@ -9,7 +9,7 @@ import Loading from '../components/Loading/Loading'
 import Navbar from '../components/Navbar/Navbar'
 import HeroSection from '../components/HeroSection/HeroSection'
 import Footer from '../components/Footer/Footer'
-import OnlinePlayer from '../components/OnlinePlayer/onlineplayer'
+import OnlinePlayer from '../components/OnlinePlayer/OnlinePlayer'
 
 export default function Home() {
   const { loading, error } = APIData()
