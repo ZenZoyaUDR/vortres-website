@@ -2,16 +2,17 @@ import Head from 'next/head'
 import style from '../styles/Pages/Home.module.css'
 
 // API
-import getAPIData from '../FetchData/getServerData'
+import APIData from '../fetch/getServerData'
 
 // Components
 import Loading from '../components/Loading/Loading'
 import Navbar from '../components/Navbar/Navbar'
 import HeroSection from '../components/HeroSection/HeroSection'
 import Footer from '../components/Footer/Footer'
+import OnlinePlayer from '../components/OnlinePlayer/onlineplayer'
 
 export default function Home() {
-  const { loading, player } = getAPIData()
+  const { loading, error } = APIData()
 
   return (
     <>
@@ -28,7 +29,7 @@ export default function Home() {
         <div className={style.cardOuter}>
           <div className={style.cardInner} id={style.online}>
             <p className={style.olpTitle}>Server Status</p>
-            <p className={style.olpPlayer}>{player} Players Online</p>
+            <div className={style.olpPlayer}>{error ? "Can't not get data from server" : <OnlinePlayer />}</div>
           </div>
         </div>
 

@@ -35,8 +35,8 @@ p.in {
   color: var(--color-text);
 }
 
-p.olpPlayer {
-  font-size: 20px;
+div.olpPlayer {
+  font-size: 19px;
   font-weight: 700;
   display: block;
   margin: auto;

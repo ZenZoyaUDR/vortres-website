@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
-export default function getAPIData() {
+export default function APIData() {
      const [loading, setLoading] = useState(true);
      const [error, setError] = useState(false);
      const [player, setPlayer] = useState("-");
@@ -18,6 +18,7 @@ export default function getAPIData() {
           }).then(res => {
                setPlayer(res.data.players.online)
                setLoading(false)
+               setError(true)
           }).catch(err => {
                if (axios.isCancel(err)) return
                setError(true)
@@ -29,7 +30,3 @@ export default function getAPIData() {
 
      return { loading, error, player }
 }
-
-const timer = setTimeout(() => {
-    getAPIData()
- }, 5000);
