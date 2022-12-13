@@ -29,7 +29,7 @@ export default function Home() {
         <div className={style.cardOuter}>
           <div className={style.cardInner} id={style.online}>
             <p className={style.olpTitle}>Server Status</p>
-            <div className={style.olpPlayer}>{error ? "Can't not get data from server" : <OnlinePlayer />}</div>
+            <div className={style.olpPlayer}>{error ? "Can't not get data from serverrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" : <OnlinePlayer />}</div>
           </div>
         </div>
 
