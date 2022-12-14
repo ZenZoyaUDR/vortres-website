@@ -1,10 +1,10 @@
-import APIData from '../../fetch/getServerData'
+import APIDataSWR from '../../fetch/getServerData-SWR'
 
 function OnlinePlayer() {
-     const { player } = APIData()
+     const { data } = APIDataSWR()
 
      return (
-          <p>{player} Player Online</p>
+          <p>{data?.server.playerCount} Player Online</p>
      )
 }
 

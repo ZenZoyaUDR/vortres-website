@@ -1,9 +1,9 @@
-// import useSWR from 'swr'
+import useSWR from 'swr'
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-function APIDataSWR() {
+export default function APIDataSWR() {
   const { data, error, isLoading } = useSWR(
-    "/api/stats",
+    "https://api.minehut.com/server/bitrpg?byName=true",
     fetcher
   );
 

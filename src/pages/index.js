@@ -2,7 +2,7 @@ import Head from 'next/head'
 import style from '../styles/Pages/Home.module.css'
 
 // API
-import APIData from '../fetch/getServerData'
+import APIDataSWR from '../fetch/getServerData-SWR'
 
 // Components
 import Loading from '../components/Loading/Loading'
@@ -12,11 +12,11 @@ import Footer from '../components/Footer/Footer'
 import OnlinePlayer from '../components/OnlinePlayer/OnlinePlayer'
 
 export default function Home() {
-  const { loading, error } = APIData()
+  const { isLoading, error } = APIDataSWR()
 
   return (
     <>
-      <div>{loading && <Loading />}</div>
+      <div>{isLoading && <Loading />}</div>
       <Head>
         <title>Starite | Home</title>
         <link rel="icon" href="/favicon.ico" />
