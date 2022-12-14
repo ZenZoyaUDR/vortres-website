@@ -3,9 +3,8 @@ import APIDataSWR from '../../fetch/getServerData-SWR'
 function OnlinePlayer() {
      const { data } = APIDataSWR()
 
-     return (
-          <p>{data?.server.playerCount} Player Online</p>
-     )
+     if (!data) return <p>- Players Online</p>
+     return <p>{data?.server.playerCount} Players Online</p>
 }
 
 export default OnlinePlayer
