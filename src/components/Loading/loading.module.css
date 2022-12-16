@@ -69,14 +69,14 @@
 @media screen and (max-width: 500px) {
   .sublineInc {
      position: fixed;
-     background: linear-gradient(to right, var(--color-text), var(--main-color));
+     background: linear-gradient(to right, var(--main-color-dark), var(--main-color));
      height: 2px;
      z-index: 1500;
   }
 
   .sublineDec {
      position: fixed;
-     background: linear-gradient(to right, var(--color-text), var(--main-color));
+     background: linear-gradient(to right, var(--main-color-dark), var(--main-color));
      height: 2px;
      z-index: 1500;
   }
