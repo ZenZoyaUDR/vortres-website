@@ -25,16 +25,16 @@ export default function Home() {
       <Navbar />
       <HeroSection />
 
-      <div className={style.cardContainer}>
-        <div className={style.cardOuter}>
-          <div className={style.cardInner} id={style.online}>
-            <p className={style.olpTitle}>Server Status</p>
-            <div className={style.olpPlayer}>{error ? "Can't not get data from the server" : <OnlinePlayer />}</div>
+      <div className={style.card_container}>
+        <div className={style.card_outer}>
+          <div className={style.card_inner} id={style.online}>
+            <p className={style.olp_title}>Server Status</p>
+            <div className={style.olp_player}>{error ? "Can't not get data from the server" : <OnlinePlayer />}</div>
           </div>
         </div>
 
-        <div className={style.cardOuter}>
-          <div className={style.cardInner} id={style.normal}>
+        <div className={style.card_outer}>
+          <div className={style.card_inner} id={style.normal}>
             <p className={style.title}>-- Card 2 --</p>
             <p className={style.in}>Test --- Test</p>
           </div>
