@@ -16,21 +16,21 @@
      position: fixed;
      background: var(--color-shadow);
      width: 100%;
-     height: 2px;
+     height: 3px;
      z-index: 1500;
 }
 
 .sublineInc {
      position: fixed;
      background: var(--main-color);
-     height: 2px;
+     height: 3px;
      z-index: 1500;
 }
 
 .sublineDec {
      position: fixed;
      background: var(--main-color);
-     height: 2px;
+     height: 3px;
      z-index: 1500;
 }
 
@@ -67,17 +67,25 @@
 }
 
 @media screen and (max-width: 500px) {
+     .loadingSlider {
+          height: 2px;
+     }
+
+     .loadingLine {
+          height: 2px;
+     }
+
      .sublineInc {
           position: fixed;
           background: linear-gradient(to right, #4400ff, var(--main-color));
-          height: 3px;
+          height: 2px;
           z-index: 1500;
      }
 
      .sublineDec {
           position: fixed;
           background: linear-gradient(to right, #4400ff, var(--main-color));
-          height: 3px;
+          height: 2px;
           z-index: 1500;
      }
 }

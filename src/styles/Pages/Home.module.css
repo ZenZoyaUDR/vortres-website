@@ -1,15 +1,15 @@
-.cardContainer {
+.card_container {
   width: 55%;
   display: flex;
   margin: 0 auto;
 }
 
-.cardOuter {
+.card_outer {
   width: 50%;
   padding: 25px;
 }
 
-.cardInner {
+.card_inner {
   border: 1px solid var(--color-light-dark);
   background-color: var(--color-light-dark);
   height: 100%;
@@ -18,7 +18,7 @@
   border-radius: 12px;
 }
 
-.cardInner:hover {
+.card_inner:hover {
   border: var(--main-color);
   border-style: solid;
   border-width: 1px;
@@ -35,7 +35,7 @@ p.in {
   color: var(--color-text);
 }
 
-div.olpPlayer {
+div.olp_player {
   font-size: 19px;
   font-weight: 700;
   display: block;
@@ -43,7 +43,7 @@ div.olpPlayer {
   color: var(--color-text);
 }
 
-p.olpTitle {
+p.olp_title {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 700;
@@ -52,19 +52,19 @@ p.olpTitle {
 }
 
 @media screen and (max-width: 1100px) {
-  .cardContainer {
+  .card_container {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     margin: auto;
   }
 
-  .cardOuter {
+  .card_outer {
     width: 100%;
     min-height: 150px;
   }
 
-  .cardInner {
+  .card_inner {
     padding: 25px;
   }
 }
