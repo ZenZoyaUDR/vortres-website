@@ -4,7 +4,7 @@
      position: fixed;
      align-items: center;
      justify-content: space-between;
-     background: var(--color-light-dark-trans-2);
+     background: var(--color-light-dark);
      width: 100%;
      padding: 17px 15px;
      z-index: 1000;
@@ -79,7 +79,7 @@
           height: 100%;
           background: var(--color-light-dark-trans);
           padding: 40px 0 0 10px;
-          z-index: 1001;
+          z-index: 100;
           transition: 0.2s ease-in-out;
      }
 
@@ -95,10 +95,10 @@
           max-width: 70%;
           height: 100%;
           background: var(--color-light-dark-trans);
-          -webkit-backdrop-filter: blur(3px);
+          --webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(5px);
           padding: 40px 0 0 10px;
-          z-index: 1001;
+          z-index: 100;
           transition: 0.2s ease-in-out;
      }
 
