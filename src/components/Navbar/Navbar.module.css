@@ -82,7 +82,7 @@
           -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
           padding: 40px 0 0 10px;
-          z-index: 100;
+          z-index: 1000;
           transition: 0.2s ease-in-out;
      }
 
@@ -101,7 +101,7 @@
           -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
           padding: 40px 0 0 10px;
-          z-index: 100;
+          z-index: 1000;
           transition: 0.2s ease-in-out;
      }
 
