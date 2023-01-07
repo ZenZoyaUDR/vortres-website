@@ -79,7 +79,9 @@
           width: 200px;
           max-width: 70%;
           height: 100%;
-          background: var(--color-light-dark);
+          background: var(--color-light-dark-trans);
+          -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
           padding: 40px 0 0 10px;
           z-index: 100;
           transition: 0.2s ease-in-out;
@@ -96,7 +98,9 @@
           width: 200px;
           max-width: 70%;
           height: 100%;
-          background: var(--color-light-dark);
+          background: var(--color-light-dark-trans);
+          -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
           padding: 40px 0 0 10px;
           z-index: 100;
           transition: 0.2s ease-in-out;
