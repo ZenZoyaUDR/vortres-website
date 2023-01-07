@@ -4,7 +4,7 @@
      position: fixed;
      align-items: center;
      justify-content: space-between;
-     background: var(--color-light-dark);
+     background: var(--color-light-dark-trans);
      -webkit-backdrop-filter: blur(3px);
      backdrop-filter: blur(3px);
      width: 100%;
