@@ -22,14 +22,14 @@
 
 .sublineInc {
      position: fixed;
-     background: var(--main-color);
+     background: #571bff;
      height: 2px;
      z-index: 1500;
 }
 
 .sublineDec {
      position: fixed;
-     background: var(--main-color);
+     background: #571bff;
      height: 2px;
      z-index: 1500;
 }
@@ -67,6 +67,7 @@
 }
 
 @media screen and (max-width: 500px) {
+     /*
      .sublineInc {
           background: linear-gradient(to right, #4400ff, var(--main-color));
      }
@@ -74,4 +75,5 @@
      .sublineDec {
           background: linear-gradient(to right, #4400ff, var(--main-color));
      }
+*/
 }
