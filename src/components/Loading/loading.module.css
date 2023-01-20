@@ -22,14 +22,14 @@
 
 .sublineInc {
      position: fixed;
-     background: linear-gradient(to right, #1c2965, #3247b1, var(--main-color));
+     background: #571aff;
      height: 2px;
      z-index: 1500;
 }
 
 .sublineDec {
      position: fixed;
-     background: linear-gradient(to right, #1c2965, #3247b1, var(--main-color));
+     background: #571aff;
      height: 2px;
      z-index: 1500;
 }
