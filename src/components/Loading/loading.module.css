@@ -22,14 +22,14 @@
 
 .sublineInc {
      position: fixed;
-     background: #571bff;
+     background: linear-gradient(to right, var(--color-shadow), var(--main-color), var(--color-shadow));
      height: 2px;
      z-index: 1500;
 }
 
 .sublineDec {
      position: fixed;
-     background: #571bff;
+     background: linear-gradient(to right, var(--color-shadow), var(--main-color), var(--color-shadow));
      height: 2px;
      z-index: 1500;
 }
@@ -69,11 +69,11 @@
 @media screen and (max-width: 500px) {
      /*
      .sublineInc {
-          background: linear-gradient(to right, #4400ff, var(--main-color));
+          background: linear-gradient(to right, var(--color-shadow), var(--main-color), var(--color-shadow));
      }
 
      .sublineDec {
-          background: linear-gradient(to right, #4400ff, var(--main-color));
+          background: linear-gradient(to right, var(--color-shadow), var(--main-color), var(--color-shadow));
      }
 */
 }
