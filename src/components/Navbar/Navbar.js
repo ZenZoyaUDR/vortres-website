@@ -22,7 +22,7 @@ function Navbar() {
                               </li>
                               <li>
                                    <Link href="/creator">
-                                        Creahrefr
+                                        Creator
                                    </Link>
                               </li>
                               <li>
