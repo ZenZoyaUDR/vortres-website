@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-      {isLoading ? <div><Loading /></div>}
+      <div>{isLoading ? <div><Loading /></div>}</div>
       <Head>
         <title>Starite | Home</title>
         <link rel="icon" href="/favicon.ico" />
