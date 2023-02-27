@@ -5,16 +5,14 @@
 :root {
   --accent: #385ef1;
   --accent-trans: rgba(56, 94, 241, 0.985);
-  --accent-alt: #41464d;
-  --main-color: #4766fd;
-  --main-color-dark: #2e334d;
-  --main-color-alt: #ccd4ff;
-  --main-color-dark-trans: rgba(46, 51, 77, 0.985);
+  --accent-alt: #2e334d;
+  --color-dark: #2E2E33;
+  --color-dark-trans: rgba(46, 51, 77, 0.985);
   --color-text: #eaeaea;
   --color-text-dark: #8f9297;
   --color-light-dark: #24262c;
   --color-light-dark-trans: rgba(36, 38, 44, 0.900);
-  --color-warning: #ff4646;
+  --color-red: #ff4646;
   --color-shadow: rgba(0, 0, 0, 0.400);
 }
 
@@ -32,7 +30,7 @@
 
 html,
 body {
-  background: var(--main-color-dark);
+  background: var(--color-dark);
   color: var(--color-text);
   padding: 0;
   margin: 0;
