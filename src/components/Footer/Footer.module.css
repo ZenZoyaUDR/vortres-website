@@ -9,7 +9,7 @@
   border-top: 1px solid var(--accent-color);
   justify-content: center;
   align-items: center;
-  background: var(--color-light-dark);
+  background: var(--color-dark);
 }
 
 .footer a {
@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  color: var(--color-text-light);
 }
 
 .logo {
