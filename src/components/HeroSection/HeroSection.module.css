@@ -10,7 +10,7 @@
 }
 
 .heroContainer>h1 {
-     color: var(--color-text);
+     color: var(--color-text-light);
      text-align: center;
      font-size: 70px;
      margin-top: -50px;
@@ -19,7 +19,7 @@
 .heroContainer>p {
      text-align: center;
      margin-top: 8px;
-     color: var(--color-text);
+     color: var(--color-text-light);
      font-size: 32px;
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
           'Lucida Sans', Arial, sans-serif;
