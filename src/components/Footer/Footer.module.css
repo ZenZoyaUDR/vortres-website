@@ -9,7 +9,7 @@
   border-top: 1px solid var(--accent-color);
   justify-content: center;
   align-items: center;
-  background: var(--color-dark);
+  background: var(--color-light-dark);
 }
 
 .footer a {
