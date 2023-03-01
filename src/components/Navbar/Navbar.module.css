@@ -13,13 +13,13 @@
 #navlogo {
      font-weight: 700;
      font-size: 25px;
-     color: var(--color-text);
+     color: var(--color-text-light);
      text-transform: uppercase;
      transition: all 0.2s ease;
 }
 
 #navlogo:hover {
-     color: var(--main-color);
+     color: var(--accent-color);
 }
 
 #navbar {
@@ -37,20 +37,20 @@
      text-decoration: none;
      font-size: 15px;
      font-weight: 700;
-     color: var(--color-text);
+     color: var(--color-text-light);
      text-transform: uppercase;
      transition: 0.1s ease-in-out;
 }
 
 #navbar li a:hover {
-     color: var(--main-color);
+     color: var(--accent-color);
 }
 
 #navbar li a:hover::after {
      content: "";
      width: 35%;
      height: 2px;
-     background: var(--main-color);
+     background: var(--accent-color);
      position: absolute;
      bottom: -3px;
      left: 15px;
@@ -61,7 +61,7 @@
 }
 
 #mobile i {
-     color: var(--color-text);
+     color: var(--accent-text);
      align-items: center;
 }
 
