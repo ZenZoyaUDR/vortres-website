@@ -1,5 +1,5 @@
 .error_container {
-  background: var(--accent-color);
+  background: var(--color-dark);
   padding: 0 2rem;
   min-height: 100vh;
   padding: 1rem 0;
@@ -31,7 +31,7 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
-  color: var(--main-color);
+  color: var(--accent-color);
   text-transform: uppercase;
   transition: 0.2s ease-in-out;
 }
