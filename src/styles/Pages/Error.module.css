@@ -1,5 +1,5 @@
 .error_container {
-  background: var(--accent);
+  background: var(--accent-color);
   padding: 0 2rem;
   min-height: 100vh;
   padding: 1rem 0;
@@ -11,7 +11,7 @@
 }
 
 .error_code {
-  color: var(--color-text);
+  color: var(--color-text-light);
   font-size: 95px;
   font-weight: 700;
   padding-bottom: 25px;
