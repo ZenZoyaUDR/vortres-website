@@ -13,13 +13,12 @@
 #navlogo {
      font-weight: 700;
      font-size: 25px;
-     color: var(--color-text-light);
      text-transform: uppercase;
-     transition: all 0.2s ease;
-}
-
-#navlogo:hover {
-     color: var(--accent-color);
+     transition: background-position 275ms ease;
+     background: linear-gradient(to right, var(--accent-color), #7890f0);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
 }
 
 #navbar {

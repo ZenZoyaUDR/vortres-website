@@ -8,7 +8,7 @@ function Navbar() {
      return (
           <>
                <nav className={style.nav}>
-                    <Link id={style.navlogo} href="/">Starite</Link>
+                    <Link id={style.navlogo} href="/">Vortres</Link>
 
                     <div>
                          <ul

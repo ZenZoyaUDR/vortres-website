@@ -16,9 +16,9 @@ export default function Home() {
 
   return (
     <>
-      <div>{isLoading && <Loading />}</div>
+      <Loading />
       <Head>
-        <title>Starite | Home</title>
+        <title>Vortres | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
