@@ -4,7 +4,7 @@
      position: fixed;
      align-items: center;
      justify-content: space-between;
-     background: var(--color-light-dark);
+     background: var(--color-dark);
      width: 100%;
      padding: 13px 15px;
      z-index: 1000;
