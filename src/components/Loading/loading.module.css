@@ -22,14 +22,14 @@
 
 .sublineInc {
      position: fixed;
-     background: #571aff;
+     background: #85ef1;
      height: 2px;
      z-index: 1500;
 }
 
 .sublineDec {
      position: fixed;
-     background: #571aff;
+     background: #85ef1;
      height: 2px;
      z-index: 1500;
 }
