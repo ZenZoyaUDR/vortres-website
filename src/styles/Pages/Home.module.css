@@ -19,7 +19,7 @@
 }
 
 .card_inner:hover {
-  border: var(--main-color);
+  border: var(--accent-color);
   border-style: solid;
   border-width: 1px;
 }
