@@ -1,4 +1,4 @@
-export default function Leaderboard() { 
+function Leaderboard() { 
    const { colorMode, toggleColorMode } = useColorMode() 
    const { data, error } = useSWR('/api/user', fetcher) 
   
@@ -82,3 +82,5 @@ export default function Leaderboard() {
      </div> 
    ) 
  }
+
+export default Leaderboard;
