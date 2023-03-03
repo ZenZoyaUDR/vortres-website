@@ -1,14 +1,12 @@
 function Leaderboard() { 
-   const { colorMode, toggleColorMode } = useColorMode() 
-   const { data, error } = useSWR('/api/user', fetcher) 
+   const { data, error } = useSWR('/api/user', fetcher);
   
    if (error) return <div>Failed to load</div> 
    if (!data) { 
      return ( 
        <div className={styles.loading}> 
-         <Spinner size="xl" /> 
-         <Text as="h2">Fetching data...</Text> 
-         <Text as="h4">This can take up to 20 seconds</Text> 
+         <h2>Fetching data...</h2> 
+         <h4>This can take up to 20 seconds</h4> 
        </div> 
      ) 
    } 
@@ -16,18 +14,12 @@ function Leaderboard() {
    return ( 
      <div className={styles.container}> 
        <Head> 
-         <title>Devtoberfest 2021 Leaderboard</title> 
-         <meta name="description" content="Devtoberfest 2021 Leaderboard" /> 
+         <title>Vortres | Leaderboard</title> 
+         <meta name="description" content="Leaderboard" /> 
          <link rel="icon" href="/favicon.ico" /> 
        </Head> 
   
        <main className={styles.main}> 
-         <IconButton onClick={toggleColorMode}>{colorMode === 'light' ? <MoonIcon /> : <SunIcon />}</IconButton> 
-         <Image 
-           boxSize="300px" 
-           src={colorMode === 'light' ? '/Devtoberfest-Logo-light.png' : '/Devtoberfest-Logo-dark.png'} 
-           alt="Devtoberfest logo" 
-         /> 
          <h1 className={styles.title}>Leaderboard</h1> 
          <p className={styles.description}>Check the unofficial leaderboard right below 🐱‍💻</p> 
          <Divider /> 
