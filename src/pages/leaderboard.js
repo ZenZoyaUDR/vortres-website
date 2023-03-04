@@ -5,15 +5,15 @@ function Leaderboard() {
   // const { data, error } = useSWR('/api/user', fetcher);
   
   // if (error) return <div>Failed to load</div> 
-  // if (!data) { 
-     return ( 
-       <div className={styles.loading}>
-         <Loading />
-         <h2>Fetching data...</h2> 
-         <h4>This can take up to 20 seconds</h4> 
-       </div> 
-     ) 
-   } 
+  /* if (!data) { 
+   *  return ( 
+   *    <div className={styles.loading}>
+   *      <Loading />
+   *      <h2>Fetching data...</h2> 
+   *      <h4>This can take up to 20 seconds</h4> 
+   *    </div> 
+   *  ) 
+   */} 
   
    return ( 
      <div className={styles.container}> 
