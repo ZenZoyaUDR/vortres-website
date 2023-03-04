@@ -1,11 +1,11 @@
 // API
-import APILeaderBSWR from '../fetch/getServerLeaderB'
+//import APILeaderBSWR from '../fetch/getServerLeaderB'
 
 function Leaderboard() { 
-   const { data, error } = useSWR('/api/user', fetcher);
+  // const { data, error } = useSWR('/api/user', fetcher);
   
-   if (error) return <div>Failed to load</div> 
-   if (!data) { 
+  // if (error) return <div>Failed to load</div> 
+  // if (!data) { 
      return ( 
        <div className={styles.loading}>
          <Loading />
@@ -26,55 +26,27 @@ function Leaderboard() {
        <main className={styles.main}> 
          <h1 className={styles.title}>Leaderboard</h1> 
          <p className={styles.description}>Check the unofficial leaderboard right below 🐱‍💻</p> 
-         <Divider /> 
-         <Table variant="striped" size="sm"> 
-           <TableCaption placement="top"> 
-             Kudos to all participants, organizers and supporters of this event 👾 
-           </TableCaption> 
-           <Thead> 
-             <Tr> 
-               <Th>Rank</Th> 
-               <Th>Developer</Th> 
-               <Th>Level</Th> 
-               <Th isNumeric>Points</Th> 
-             </Tr> 
-           </Thead> 
-           <Tbody> 
+         <div>
+           <div> 
+             <div> 
+               <div>Rank</div> 
+               <div>Developer</div> 
+               <div>Level</div> 
+               <div>Points</div> 
+             </div> 
+           </div> 
+           <div> 
              {data.participantScores.map((user, index) => ( 
-               <Tr key={user.id}> 
-                 <Td>{++index}</Td> 
-                 <Td>{user.id}</Td> 
-                 <Td>{user.level}</Td> 
+               <div key={user.id}> 
+                 <div>{++index}</div> 
+                 <div>{user.id}</div> 
+                 <div>{user.level}</div> 
                  <Td isNumeric>{user.points}</Td> 
-               </Tr> 
+               </div> 
              ))} 
-           </Tbody> 
-           <Tfoot> 
-             <Tr> 
-               <Th>Rank</Th> 
-               <Th>Developer</Th> 
-               <Th>Level</Th> 
-               <Th isNumeric>Points</Th> 
-             </Tr> 
-           </Tfoot> 
-         </Table> 
+           </div> 
+         </div>
        </main> 
-  
-       <footer className={styles.footer}> 
-         <Text> 
-           Made with ❤,{' '} 
-           <Link href="https://nextjs.org" isExternal> 
-             Next.JS 
-             <ExternalLinkIcon mx="2px" /> 
-           </Link> 
-           ,{' '} 
-           <Link href="https://chakra-ui.com" isExternal> 
-             the Chakra Design system 
-             <ExternalLinkIcon mx="2px" /> 
-           </Link>{' '} 
-           and a lot of ☕ coffee! 
-         </Text> 
-       </footer> 
      </div> 
    ) 
  }
