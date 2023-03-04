@@ -13,8 +13,8 @@ function Leaderboard() {
    *      <h4>This can take up to 20 seconds</h4> 
    *    </div> 
    *  ) 
-   */} 
-  
+   *} 
+   */
    return ( 
      <div className={styles.container}> 
        <Head> 
