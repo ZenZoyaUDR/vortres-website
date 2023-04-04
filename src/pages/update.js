@@ -18,7 +18,7 @@ export default function Update() {
     <>
       <div>{isLoading && <Loading />}</div>
       <Head>
-        <title>Vortres | Home</title>
+        <title>Vortres | Update</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
