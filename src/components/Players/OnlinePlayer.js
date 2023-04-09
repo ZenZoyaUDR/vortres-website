@@ -1,4 +1,4 @@
-import APIDataSWR from '../../fetch/getServerData-SWR'
+import APIDataSWR from '../../fetch/getPlayerOnline'
 
 function OnlinePlayer() {
      const { data } = APIDataSWR()

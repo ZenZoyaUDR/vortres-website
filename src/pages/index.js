@@ -2,14 +2,14 @@ import Head from 'next/head'
 import style from '../styles/Pages/Home.module.css'
 
 // API
-import APIDataSWR from '../fetch/getServerData-SWR'
+import APIDataSWR from '../fetch/getPlayerOnline'
 
 // Components
 import Loading from '../components/Loading/Loading'
 import Navbar from '../components/Navbar/Navbar'
 import HeroSection from '../components/HeroSection/HeroSection'
 import Footer from '../components/Footer/Footer'
-import OnlinePlayer from '../components/OnlinePlayer/OnlinePlayer'
+import OnlinePlayer from '../components/Players/OnlinePlayer'
 
 export default function Home() {
   const { isLoading, error } = APIDataSWR()
