@@ -9,7 +9,7 @@ export default async function handler(req, res) {
      }
 
      try {
-         data = await prisma.player.findFirst({
+         const data = await prisma.player.findFirst({
            where: {
              username: search
            }
