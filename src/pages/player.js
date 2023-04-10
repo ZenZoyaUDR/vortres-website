@@ -3,6 +3,7 @@ import useSWR from 'swr';
 
 export default function Player() {
      const [query, setQuery] = useState("");
+     const [err, setErr] = useState(false);
 
      const { data, error, isLoading } = useSWR(`/api/players?search=${query}`, async (url) => {
           const response = await fetch(url);
@@ -11,7 +12,13 @@ export default function Player() {
 
      const handleSearch = (event) => {
           event.preventDefault();
-          setQuery(event.target.search.value);
+          if (searchTerm.includes(" ")) {
+            console.log("Error: Search term contains spaces");
+            setErr(true);
+          } else {
+            setQuery(event.target.search.value);
+            setErr(false);
+          }
      };
 
      return (
@@ -20,6 +27,7 @@ export default function Player() {
                     <input type="text" name="search" />
                     <button type="submit">Search</button>
                     {!query && <p>Please enter a search term</p>}
+                    {err && <p>Can't not contain spaces</p>}
                </form>
 
                {isLoading ? (
