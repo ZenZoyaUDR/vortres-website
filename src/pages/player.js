@@ -1,11 +1,6 @@
 import { useState } from 'react';
 import useSWR from 'swr';
 
-function validateInput(input) {
-  const regex = /^[a-zA-Z0-9_]+$/;
-  return regex.test(input);
-}
-
 export default function Player() {
      const [query, setQuery] = useState("");
      const [err, setErr] = useState(false);
@@ -18,7 +13,9 @@ export default function Player() {
      const handleSearch = (event) => {
           event.preventDefault();
 
-          if (validateInput(event.target.search.value.includes)) {
+          const regex = /^[A-Za-z0-9_]+$/;
+          const input = event.target.search.value.includes
+          if (regex.test(input)) {
             setQuery(event.target.search.value);
             setErr(false);
           } else {
