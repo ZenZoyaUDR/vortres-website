@@ -3,7 +3,6 @@ import useSWR from 'swr';
 
 export default function Player() {
      const [query, setQuery] = useState("");
-     const [querySafe, setQuerySafe] = useState("");
      const [err, setErr] = useState(false);
 
      const { data, error, isLoading } = useSWR(`/api/players?search=${query}`, async (url) => {
