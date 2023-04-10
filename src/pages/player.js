@@ -13,7 +13,7 @@ export default function Player() {
      const handleSearch = (event) => {
           event.preventDefault();
 
-          if (event.target.search.value.includes(" ")) {
+          if (event.target.search.value.includes("_")) {
             console.log("Error: Search term contains spaces");
             setErr(true);
           } else {
