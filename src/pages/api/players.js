@@ -11,13 +11,15 @@ export default async function handler(req, res) {
      try {
          const data = await prisma.player.findFirst({
            where: {
-             username: search
+             username: {
+               contains: search || "",
+             },
            }
          });
 
        res.json(data);
      } catch (err) {
-       console.error(err);
+       console.log(err);
        res.status(500).json({ error: 'Internal server error' });
      } finally {
        await prisma.$disconnect();
