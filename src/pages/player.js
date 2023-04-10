@@ -4,7 +4,7 @@ import useSWR from 'swr';
 export default function Player() {
      const [query, setQuery] = useState("");
 
-     const { data, error, isLoading } = useSWR(`/api/players?search=${query}&findone=true`, async (url) => {
+     const { data, error, isLoading } = useSWR(`/api/players?search=${query}`, async (url) => {
           const response = await fetch(url);
           return response.json();
      });
