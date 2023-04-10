@@ -14,7 +14,7 @@ export default function Player() {
           event.preventDefault();
 
           const regex = /^[A-Za-z0-9_]+$/;
-          const input = "${event.target.search.value.includes}"
+          const input = event.target.search.value
           if (regex.test(input)) {
             setQuery(event.target.search.value);
             setErr(false);
