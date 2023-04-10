@@ -28,7 +28,7 @@ export default function Player() {
                     <input type="text" name="search" />
                     <button type="submit">Search</button>
                     {!query && <p>Please enter a search term</p>}
-                    {err && <p>Can't not contain spaces</p>}
+                    {err && <p>Search term can't not contain spaces</p>}
                </form>
 
                {isLoading ? (
