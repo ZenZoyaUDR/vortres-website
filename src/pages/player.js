@@ -36,7 +36,7 @@ export default function Player() {
                     <div>Loading...</div>
                ) : error ? (
                     <div>Error: {error.message}</div>
-               ) : data.id ? (
+               ) : data ? (
                     <ul>
                          <li key={data.id}>
                               {data.username} - Level: {data.level}
