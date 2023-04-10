@@ -27,9 +27,10 @@ export default function Player() {
                ) : error ? (
                     <div>Error: {error.message}</div>
                ) : data ? (
+                    const dat = data["data"]
                     <ul>
-                         <li key={data.id}>
-                              {data.username} - Level: {data.level}
+                         <li key={dat.id}>
+                              {dat.username} - Level: {dat.level}
                          </li>
                     </ul>
                ) : (
