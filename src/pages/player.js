@@ -28,8 +28,8 @@ export default function Player() {
                     <div>Error: {error.message}</div>
                ) : data ? (
                     <ul>
-                         <li key={data["data"].id}>
-                              {data["data"].username} - Level: {data["data"].level}
+                         <li key={data.id}>
+                              {data.username} - Level: {data.level}
                          </li>
                     </ul>
                ) : (
