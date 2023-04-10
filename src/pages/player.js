@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import useSWR from 'swr';
 
+function validateInput(input) {
+  const regex = /^[a-zA-Z0-9_]+$/;
+  return regex.test(input);
+}
+
 export default function Player() {
      const [query, setQuery] = useState("");
      const [err, setErr] = useState(false);
@@ -13,12 +18,11 @@ export default function Player() {
      const handleSearch = (event) => {
           event.preventDefault();
 
-          if (event.target.search.value.includes("_")) {
-            console.log("Error: Search term contains spaces");
-            setErr(true);
-          } else {
+          if (validateInput("${event.target.search.value.includes}")) {
             setQuery(event.target.search.value);
             setErr(false);
+          } else {
+            setErr(true);
           }
      };
 
@@ -28,7 +32,7 @@ export default function Player() {
                     <input type="text" name="search" />
                     <button type="submit">Search</button>
                     {!query && <p>Please enter a search term</p>}
-                    {err && <p>Search term can't not contain spaces</p>}
+                    {err && <p>Search term only allowed car A-Z, a-z, and _</p>}
                </form>
 
                {isLoading ? (
