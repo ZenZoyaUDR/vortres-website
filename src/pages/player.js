@@ -32,7 +32,7 @@ export default function Player() {
                     <input type="text" name="search" />
                     <button type="submit">Search</button>
                     {!query && <p>Please enter a search term</p>}
-                    {err && <p>Search term only allowed car A-Z, a-z, and _</p>}
+                    {err && <p>Accepted characters: A-Z, a-z, 1-9, and _</p>}
                </form>
 
                {isLoading ? (
