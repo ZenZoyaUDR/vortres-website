@@ -3,8 +3,11 @@ import prisma from '../../lib/prisma'
 export default async function handler(req, res) {
      const { search, findone } = req.query;
 
-     if(!search) return res.send("'search' query required!")
-     if(findone === true) {
+     if (!search || !findone) {
+       res.status(400).json({ error: 'Missing query parameters' });
+       return;
+     }
+     if(findone) {
        const players = await prisma.player.findFirst({
             where: {
                  username: {
@@ -13,7 +16,7 @@ export default async function handler(req, res) {
             },
        });
        res.json(players);
-     } else if(findone === false) {
+     } else {
        const players = await prisma.player.findMany({
             where: {
                  username: {
@@ -22,7 +25,5 @@ export default async function handler(req, res) {
             },
        });
        res.json(players);
-     } else {
-       res.send("'findone' query required!");
-     };
+     }
 }
