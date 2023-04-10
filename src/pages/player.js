@@ -6,19 +6,19 @@ export default function Player() {
      const [querySafe, setQuerySafe] = useState("");
      const [err, setErr] = useState(false);
 
-     const { data, error, isLoading } = useSWR(`/api/players?search=${querySafe}`, async (url) => {
+     const { data, error, isLoading } = useSWR(`/api/players?search=${query}`, async (url) => {
           const response = await fetch(url);
           return response.json();
      });
 
      const handleSearch = (event) => {
           event.preventDefault();
-          setQuery(event.target.search.value);
-          if (query.includes(" ")) {
+
+          if (event.target.search.value.includes(" ")) {
             console.log("Error: Search term contains spaces");
             setErr(true);
           } else {
-            setQuerySafe(event.target.search.value);
+            setQuery(event.target.search.value);
             setErr(false);
           }
      };
