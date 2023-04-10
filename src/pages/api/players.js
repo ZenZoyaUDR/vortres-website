@@ -4,7 +4,7 @@ export default async function handler(req, res) {
      const { search, findone } = req.query;
 
      if(!search) return res.send("Search query required!")
-     if(findone === true ) {
+     if(findone === true) {
        const players = await prisma.player.findFirst({
             where: {
                  username: {
