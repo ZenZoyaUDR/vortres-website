@@ -18,7 +18,7 @@ export default function Player() {
      const handleSearch = (event) => {
           event.preventDefault();
 
-          if (validateInput("${event.target.search.value.includes}")) {
+          if (validateInput(event.target.search.value.includes)) {
             setQuery(event.target.search.value);
             setErr(false);
           } else {
