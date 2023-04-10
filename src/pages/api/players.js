@@ -1,21 +1,19 @@
 import prisma from '../../lib/prisma'
 
 export default async function handler(req, res) {
-     const { search, findone } = req.query;
+     const { search } = req.query;
 
-     if (!search || !findone) {
+     if (!search) {
        res.status(400).json({ error: 'Missing query parameters' });
        return;
      }
 
      try {
-       let data;
-
-       if (findone === 'true') {
-         data = await prisma.player.findFirst({ where: { username: search } });
-       } else {
-         data = await prisma.player.findMany({ where: { username: search } });
-       }
+         data = await prisma.player.findFirst({
+           where: {
+             username: search
+           }
+         });
 
        res.status(200).json({ data });
      } catch (err) {
