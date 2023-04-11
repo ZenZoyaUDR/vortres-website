@@ -26,20 +26,19 @@ export default function Player() {
 
      return (
           <div>
-               <form onSubmit={handleSearch}>
-                    <div className="search-container">
-                      <div className="search-box">
-                        <input
-                          type="text"
-                          placeholder="Search..."
-                          name="search"
-                        />
-                        <button type="submit">Search</button>
-                      </div>
-                    </div>
-                    {!query && <p>Please enter a search term</p>}
-                    {err && <p>Accepted characters: A-Z, a-z, 1-9, and _</p>}
-               </form>
+               <div className={styles.container}>
+                 <input
+                   type="text"
+                   placeholder="Search..."
+                   name="search"
+                   className={styles.input}
+                 />
+                 <button className={styles.button} onClick={handleSearch}>
+                   Search
+                 </button>
+                 {!query && <p>Please enter a search term</p>}
+                 {err && <p>Accepted characters: A-Z, a-z, 1-9, and _</p>}
+               </div>
 
                {isLoading ? (
                     <div>Loading...</div>
