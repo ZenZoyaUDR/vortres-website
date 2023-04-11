@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import useSWR from 'swr';
 
+import Tooltip from '../components/Tooltip/Tooltip';
+
 export default function Player() {
      const [query, setQuery] = useState("");
      const [err, setErr] = useState(false);
@@ -21,6 +23,26 @@ export default function Player() {
           } else {
             setErr(true);
           }
+     };
+
+     const handleInputChange = (e) => {
+       const regex = /^[a-zA-Z0-9_]*$/;
+       const isValid = regex.test(e.target.value);
+       if (isValid) {
+         setSearchTerm(e.target.value);
+       }
+     };
+
+     const handleInputBlur = (e) => {
+       const regex = /^[a-zA-Z0-9_]*$/;
+       const isValid = regex.test(e.target.value);
+       if (!isValid) {
+         e.target.classList.add("invalid");
+       }
+     };
+
+     const handleInputFocus = (e) => {
+       e.target.classList.remove("invalid");
      };
 
      return (
