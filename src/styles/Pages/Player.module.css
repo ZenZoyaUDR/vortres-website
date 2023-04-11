@@ -31,11 +31,12 @@
 
 @media screen and (max-width: 600px) {
   .input {
-    width: 10rem;
+    width: 20rem;
     padding: 0.1rem;
   }
 
   .button {
     border-radius: 0.20rem;
+    padding: 0.1rem;
   }
 }
