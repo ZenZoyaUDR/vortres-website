@@ -1,3 +1,4 @@
+import style from '../styles/Pages/Home.module.css';
 import { useState } from 'react';
 import useSWR from 'swr';
 
