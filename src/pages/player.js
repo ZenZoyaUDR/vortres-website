@@ -1,4 +1,4 @@
-import style from '../styles/Pages/Player.module.css';
+import styles from '../styles/Pages/Player.module.css';
 import { useState } from 'react';
 import useSWR from 'swr';
 
