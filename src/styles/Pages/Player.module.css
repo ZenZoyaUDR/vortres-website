@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 form {
   position: relative;
   width: 30rem;
