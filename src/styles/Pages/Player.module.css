@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .input {
   padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 0.15rem;
+  font-size: 1.2rem;
+  border-radius: 0.10rem;
   border: 1px solid #0000;
   margin-right: 0.5rem;
   width: 50%;
@@ -18,11 +18,11 @@
   padding: 0.5rem;
   background-color: #0070f3;
   color: #0000;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
-  border-radius: 0.15rem;
+  border-radius: 0.10rem;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .button:hover {
