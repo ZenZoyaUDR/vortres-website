@@ -26,6 +26,7 @@ export default function Player() {
 
      return (
           <div>
+               <form onSubmit={handleSearch}>
                <div className={styles.container}>
                  <input
                    type="text"
@@ -33,12 +34,13 @@ export default function Player() {
                    name="search"
                    className={styles.input}
                  />
-                 <button className={styles.button} onClick={handleSearch}>
+                 <button className={styles.button} type="submit">
                    Search
                  </button>
                  {!query && <p>Please enter a search term</p>}
                  {err && <p>Accepted characters: A-Z, a-z, 1-9, and _</p>}
                </div>
+               </form>
 
                {isLoading ? (
                     <div>Loading...</div>
