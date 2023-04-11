@@ -46,7 +46,7 @@ input[type="search"] {
   background: var(--color-light);
   padding: 0 1.6rem;
   border-radius: var(--rad);
-  appearance: none; //for iOS input[type="search"] roundedness issue. border-radius alone doesn't work
+  appearance: none;
   transition: all var(--dur) var(--bez);
   transition-property: width, border-radius;
   z-index: 1;
