@@ -5,31 +5,17 @@ import Tooltip from '../components/Tooltip/Tooltip';
 
 export default function Player() {
      const [query, setQuery] = useState("");
-     const [err, setErr] = useState(false);
 
      const { data, error, isLoading } = useSWR(`/api/players?search=${query}`, async (url) => {
           const response = await fetch(url);
           return response.json();
      });
 
-     const handleSearch = (event) => {
-          event.preventDefault();
-
-          const regex = /^[A-Za-z0-9_]+$/;
-          const input = event.target.search.value
-          if (regex.test(input)) {
-            setQuery(event.target.search.value);
-            setErr(false);
-          } else {
-            setErr(true);
-          }
-     };
-
      const handleInputChange = (e) => {
        const regex = /^[a-zA-Z0-9_]*$/;
        const isValid = regex.test(e.target.value);
        if (isValid) {
-         setSearchTerm(e.target.value);
+         setQuery(e.terget.value)
        }
      };
 
@@ -47,12 +33,23 @@ export default function Player() {
 
      return (
           <div>
-               <form onSubmit={handleSearch}>
-                    <input type="text" name="search" />
-                    <button type="submit">Search</button>
-                    {!query && <p>Please enter a search term</p>}
-                    {err && <p>Accepted characters: A-Z, a-z, 1-9, and _</p>}
-               </form>
+               <div>
+                     <input
+                       type="text"
+                       value={query}
+                       onChange={handleInputChange}
+                       onBlur={handleInputBlur}
+                       onFocus={handleInputFocus}
+                     />
+                    {!searchTerm && (
+                      <Tooltip text="Please enter a search term">
+                        <button disabled>Search</button>
+                      </Tooltip>
+                    )}
+                    {searchTerm && (
+                      <button onClick={() => console.log("search clicked")}>Search</button>
+                    )}
+               </div>
 
                {isLoading ? (
                     <div>Loading...</div>
