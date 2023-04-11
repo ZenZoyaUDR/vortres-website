@@ -6,6 +6,7 @@ export default async function handler(req, res) {
       select: {
         username: true,
         level: true,
+        exp: true,
       },
       orderBy: {
         level: 'desc',
