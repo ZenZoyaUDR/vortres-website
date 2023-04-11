@@ -8,8 +8,8 @@
 .input {
   padding: 0.5rem;
   font-size: 1.2rem;
-  border-radius: 0.25rem;
-  border: 1px solid #ccc;
+  border-radius: 0.20rem;
+  border: 1px solid #0000;
   margin-right: 0.5rem;
   width: 20rem;
 }
@@ -32,6 +32,7 @@
 @media screen and (max-width: 600px) {
   .input {
     width: 10rem;
+    padding: 0.1rem;
   }
 
   .button {
