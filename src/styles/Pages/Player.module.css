@@ -22,9 +22,19 @@
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .button:hover {
-  background-color: #0061d1;
+  background-color: #ffff;
+}
+
+@media screen and (max-width: 600px) {
+  .input {
+    width: 10rem;
+  }
+
+  .button {
+    border-radius: 0.20rem;
+  }
 }
