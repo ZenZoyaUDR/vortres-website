@@ -2,27 +2,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .input {
   padding: 0.5rem;
-  font-size: 1.2rem;
-  border-radius: 0.20rem;
+  font-size: 1rem;
+  border-radius: 0.15rem;
   border: 1px solid #0000;
   margin-right: 0.5rem;
-  width: 20rem;
+  width: 50%;
 }
 
 .button {
   padding: 0.5rem;
   background-color: #0070f3;
-  color: #fff;
-  font-size: 1.2rem;
+  color: #0000;
+  font-size: 1rem;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.15rem;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .button:hover {
@@ -31,12 +31,11 @@
 
 @media screen and (max-width: 600px) {
   .input {
-    width: 75%;
+    width: 70%;
     padding: 0.2rem;
   }
 
   .button {
-    border-radius: 0.15rem;
-    padding: 0.1rem;
+    padding: 0.2rem;
   }
 }
