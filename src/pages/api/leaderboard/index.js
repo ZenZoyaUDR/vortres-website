@@ -10,6 +10,11 @@ export default async function handler(req, res) {
       orderBy: {
         level: 'desc',
       },
-      take: 10
+      take: 10,
     });
+
+    res.status(200).json(players);
+  } catch (error) {
+    res.status(500).json({ error: 'Internal server error' });
+  }
 }
