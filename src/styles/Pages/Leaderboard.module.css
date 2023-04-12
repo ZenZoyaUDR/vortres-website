@@ -8,7 +8,7 @@
 /* Leaderboard heading */
 .lb_Heading {
   font-size: 36px;
-  background-color: var(--color-dark-light);
+  background-color: var(--color-dark);
   text-align: center;
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 20px;
@@ -34,7 +34,7 @@
 
 /* Leaderboard table rows */
 .lb_Table tr {
-  background-color: var(--color-light-dark);
+  background-color: var(--color-dark);
 }
 
 /* Leaderboard table cells */
@@ -48,5 +48,5 @@
 
 /* Leaderboard table alternating rows */
 .lb_Table tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: var(--color-light-dark);
 }
