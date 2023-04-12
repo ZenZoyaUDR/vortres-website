@@ -11,7 +11,7 @@
   background-color: var(--color-dark);
   text-align: center;
   font-family: 'Orbitron', sans-serif;
-  margin-bottom: 20px;
+  padding: 25px;
 }
 
 /* Leaderboard table */
@@ -48,5 +48,5 @@
 
 /* Leaderboard table alternating rows */
 .lb_Table tr:nth-child(even) {
-  background-color: var(--color-dark);
+  background-color: #131315;
 }
