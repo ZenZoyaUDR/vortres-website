@@ -12,9 +12,9 @@ export default function Leaderboard() {
   }, []);
 
   return (
-    <div className={style.leaderboard-container}>
-      <h1 className={style.leaderboard-heading}>Leaderboard</h1>
-      <table className={style.leaderboard-table}>
+    <div className={style.lbContainer}>
+      <h1 className={style.lbHeading}>Leaderboard</h1>
+      <table className={style.lbTable}>
         <thead>
           <tr>
             <th>Rank</th>
