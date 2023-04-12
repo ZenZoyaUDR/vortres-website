@@ -43,7 +43,7 @@
   text-align: center;
   color: #ffff;
   padding: 2px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-light-dark);;
 }
 
 /* Leaderboard table alternating rows */
