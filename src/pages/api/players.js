@@ -11,9 +11,7 @@ export default async function handler(req, res) {
      try {
          const data = await prisma.player.findFirst({
            where: {
-             username: {
-               contains: search || "",
-             },
+             username: search || "",
            }
          });
 
