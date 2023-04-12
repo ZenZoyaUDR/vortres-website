@@ -27,26 +27,26 @@
   font-weight: bold;
   text-align: center;
   padding: 2px;
-  background-color: var(--color-light-dark);
-  color: #000000;
+  background-color: var(--color-dark);
+  color: #ffff;
   border-bottom: 1px solid #ddd;
 }
 
 /* Leaderboard table rows */
 .lb_Table tr {
-  background-color: var(--color-dark);
+  background-color: var(--color-light-dark);
 }
 
 /* Leaderboard table cells */
 .lb_Table td {
   font-size: 18px;
   text-align: center;
-  color: #000000;
+  color: #ffff;
   padding: 2px;
   border-bottom: 1px solid #ddd;
 }
 
 /* Leaderboard table alternating rows */
 .lb_Table tr:nth-child(even) {
-  background-color: var(--color-light-dark);
+  background-color: var(--color-dark);
 }
