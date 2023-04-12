@@ -1,26 +1,27 @@
 /* Leaderboard container */
-.lbContainer {
+.lb_Container {
   max-width: 100%;
   margin: 0 auto;
   padding: 1px;
 }
 
 /* Leaderboard heading */
-.lbHeading {
+.lb_Heading {
   font-size: 36px;
   text-align: center;
+  font-family: 'Orbitron', sans-serif;
   margin-bottom: 20px;
 }
 
 /* Leaderboard table */
-.lbTable {
+.lb_Table {
   border-collapse: collapse;
   width: 100%;
   max-width: 100%;
 }
 
 /* Leaderboard table header */
-.lbTable th {
+.lb_Table th {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -31,12 +32,12 @@
 }
 
 /* Leaderboard table rows */
-.lbTable tr {
+.lb_Table tr {
   background-color: #fff;
 }
 
 /* Leaderboard table cells */
-.lbTable td {
+.lb_Table td {
   font-size: 18px;
   text-align: center;
   color: #000000;
@@ -45,6 +46,6 @@
 }
 
 /* Leaderboard table alternating rows */
-.lbTable tr:nth-child(even) {
+.lb_Table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
