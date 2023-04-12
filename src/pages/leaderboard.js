@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import style from '../style/
 
 export default function Leaderboard() {
   const [players, setPlayers] = useState([]);
@@ -11,9 +12,9 @@ export default function Leaderboard() {
   }, []);
 
   return (
-    <div>
-      <h1>Leaderboard</h1>
-      <table>
+    <div className="leaderboard-container">
+      <h1 className="leaderboard-heading">Leaderboard</h1>
+      <table className="leaderboard-table">
         <thead>
           <tr>
             <th>Rank</th>
