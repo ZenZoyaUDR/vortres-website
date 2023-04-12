@@ -26,7 +26,7 @@
   text-align: left;
   padding: 10px;
   background-color: #f2f2f2;
-  color: #0000;
+  color: #000000;
   border-bottom: 1px solid #ddd;
 }
 
@@ -38,7 +38,7 @@
 /* Leaderboard table cells */
 .lbTable td {
   font-size: 18px;
-  color: #0000;
+  color: #000000;
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
