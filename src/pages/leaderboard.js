@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import style from '../styles/Pages/Player.module.css';
+import style from '../styles/Pages/Leaderboard.module.css';
 
 export default function Leaderboard() {
   const [players, setPlayers] = useState([]);
