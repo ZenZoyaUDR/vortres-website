@@ -1,0 +1,45 @@
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.leaderboard-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.leaderboard-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.leaderboard-header {
+  background-color: #f8f8f8;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.leaderboard-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.leaderboard-rank {
+  font-weight: bold;
+  text-align: center;
+}
+
+.leaderboard-username {
+  text-align: center;
+}
+
+.leaderboard-level,
+.leaderboard-exp {
+  text-align: center;
+}
