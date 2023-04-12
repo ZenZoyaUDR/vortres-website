@@ -17,10 +17,10 @@ export default function Leaderboard() {
       <table className={style.lbTable}>
         <thead>
           <tr>
-            <th>Rank</th>
+            <th>No</th>
             <th>Username</th>
-            <th>Level</th>
-            <th>Experience</th>
+            <th>Lvl</th>
+            <th>Exp</th>
           </tr>
         </thead>
         <tbody>
