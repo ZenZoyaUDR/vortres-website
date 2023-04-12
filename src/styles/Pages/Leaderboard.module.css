@@ -1,7 +1,8 @@
 /* Leaderboard container */
 .lb_Container {
   max-width: 100%;
-  hight: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
   background-color: var(--color-dark);
   margin: 0 auto;
   padding: 1px;
