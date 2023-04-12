@@ -38,6 +38,7 @@
 /* Leaderboard table cells */
 .lbTable td {
   font-size: 18px;
+  text-align: center;
   color: #000000;
   padding: 2px;
   border-bottom: 1px solid #ddd;
