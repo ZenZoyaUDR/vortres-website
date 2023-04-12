@@ -27,14 +27,14 @@
   font-weight: bold;
   text-align: center;
   padding: 2px;
-  background-color: #f2f2f2;
+  background-color: var(--color-light-dark);
   color: #000000;
   border-bottom: 1px solid #ddd;
 }
 
 /* Leaderboard table rows */
 .lb_Table tr {
-  background-color: #fff;
+  background-color: var(--color-light-dark);
 }
 
 /* Leaderboard table cells */
