@@ -34,7 +34,7 @@
 
 /* Leaderboard table rows */
 .lb_Table tr {
-  background-color: var(--color-light-dark);
+  background-color: #131315;
 }
 
 /* Leaderboard table cells */
@@ -48,5 +48,5 @@
 
 /* Leaderboard table alternating rows */
 .lb_Table tr:nth-child(even) {
-  background-color: #131315;
+  background-color: var(--color-dark);
 }
