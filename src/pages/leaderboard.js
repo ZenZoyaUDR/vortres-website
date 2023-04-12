@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import style from '../style/
+import style from '../styles/Pages/Player.module.css';
 
 export default function Leaderboard() {
   const [players, setPlayers] = useState([]);
@@ -12,9 +12,9 @@ export default function Leaderboard() {
   }, []);
 
   return (
-    <div className="leaderboard-container">
-      <h1 className="leaderboard-heading">Leaderboard</h1>
-      <table className="leaderboard-table">
+    <div className={style.leaderboard-container}>
+      <h1 className={style.leaderboard-heading}>Leaderboard</h1>
+      <table className={style.leaderboard-table}>
         <thead>
           <tr>
             <th>Rank</th>
