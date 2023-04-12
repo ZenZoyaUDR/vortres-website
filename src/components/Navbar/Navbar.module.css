@@ -1,5 +1,4 @@
 .nav {
-     font-family: 'Orbitron', sans-serif;
      display: flex;
      position: fixed;
      align-items: center;
@@ -12,6 +11,7 @@
 
 #navlogo {
      font-weight: 700;
+     font-family: 'Orbitron', sans-serif;
      font-size: 25px;
      text-transform: uppercase;
      transition: background-position 275ms ease;
