@@ -1,45 +1,47 @@
-.leaderboard-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+/* Leaderboard container */
+.lbContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.leaderboard-title {
+/* Leaderboard heading */
+.lbHeading {
   font-size: 36px;
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.leaderboard-table {
+/* Leaderboard table */
+.lbTable {
   border-collapse: collapse;
   width: 100%;
   max-width: 800px;
-  margin-bottom: 40px;
 }
 
-.leaderboard-header {
-  background-color: #f8f8f8;
-  font-size: 24px;
+/* Leaderboard table header */
+.lbTable th {
+  font-size: 20px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   padding: 10px;
-  border: 1px solid #ddd;
-}
-
-.leaderboard-row:nth-child(even) {
   background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
 }
 
-.leaderboard-rank {
-  font-weight: bold;
-  text-align: center;
+/* Leaderboard table rows */
+.lbTable tr {
+  background-color: #fff;
 }
 
-.leaderboard-username {
-  text-align: center;
+/* Leaderboard table cells */
+.lbTable td {
+  font-size: 18px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
-.leaderboard-level,
-.leaderboard-exp {
-  text-align: center;
+/* Leaderboard table alternating rows */
+.lbTable tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
