@@ -23,8 +23,8 @@
 .lbTable th {
   font-size: 20px;
   font-weight: bold;
-  text-align: left;
-  padding: 1px;
+  text-align: center;
+  padding: 2px;
   background-color: #f2f2f2;
   color: #000000;
   border-bottom: 1px solid #ddd;
@@ -39,7 +39,7 @@
 .lbTable td {
   font-size: 18px;
   color: #000000;
-  padding: 1px;
+  padding: 2px;
   border-bottom: 1px solid #ddd;
 }
 
