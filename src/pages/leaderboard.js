@@ -12,9 +12,9 @@ export default function Leaderboard() {
   }, []);
 
   return (
-    <div className={style.lbContainer}>
-      <h1 className={style.lbHeading}>Leaderboard</h1>
-      <table className={style.lbTable}>
+    <div className={style.lb_Container}>
+      <h1 className={style.lb_Heading}>Leaderboard</h1>
+      <table className={style.lb_Table}>
         <thead>
           <tr>
             <th>No</th>
