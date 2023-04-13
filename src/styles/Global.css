@@ -11,8 +11,8 @@
   --color-dark-trans: rgba(13, 14, 16, 0.900);
   --color-text-light: #eaeaea;
   --color-text-dark: #8f9297;
-  --color-light-dark: #1f1f22;
-  --color-light-dark-trans: rgba(20, 20, 24, 0.900);
+  --color-light-dark: #161618;
+  --color-light-dark-trans: rgba(22, 22, 24, 0.900);
   --color-red: #ff4646;
   --color-shadow: rgba(0, 0, 0, 0.400);
 }
@@ -25,8 +25,6 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: 'Noto Sans', sans-serif;
-
-  /* Other things */
 }
 
 html,
