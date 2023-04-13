@@ -13,12 +13,15 @@
 }
 
 .copyright {
+  display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-text-light);
 }
 
 .footer a {
   justify-content: center;
+  display: flex;
   align-items: center;
   flex-grow: 1;
   color: var(--color-text-light);
