@@ -15,7 +15,7 @@ function Footer() {
           <Image src="/vercel.svg" alt="Vercel Logo" width={62} height={7} />
         </span>
       </a>
-      <p className={style.copyright>© 2023 Vortres</p>
+      <p className={style.copyright}>© 2023 Vortres</p>
     </footer>
     </div>
   )
