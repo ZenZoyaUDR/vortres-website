@@ -5,7 +5,7 @@
 .footer {
   display: flex;
   flex: 1;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   border-top: 1px solid var(--accent-color);
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
 
 .copyright {
   display: flex;
-  font-size: 20px;
+  font-size: 30px;
   align-items: center;
   justify-content: center;
   color: var(--color-text-light);
