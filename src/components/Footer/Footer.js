@@ -12,9 +12,10 @@ function Footer() {
       >
         Powered by{' '}
         <span className={style.logo}>
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          <Image src="/vercel.svg" alt="Vercel Logo" width={62} height={7} />
         </span>
       </a>
+      <p className={style.copyright>© 2023 Vortres</p>
     </footer>
     </div>
   )
