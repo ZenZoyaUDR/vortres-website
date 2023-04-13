@@ -2,19 +2,17 @@
 .lb_Container {
   max-width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
-  background-color: var(--color-dark);
   padding: 0px;
 }
 
 /* Leaderboard heading */
 .lb_Heading {
   font-size: 36px;
-  background-color: var(--color-dark);
   text-align: center;
   font-family: 'Orbitron', sans-serif;
   padding: 25px;
-  padding-top: 70px;
+  padding-top: 75px;
+  color: var(--color-text-light);
 }
 
 /* Leaderboard table */
@@ -33,7 +31,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: var(--color-dark);
-  color: #ffff;
+  color: var(--color-text-light);
   border-bottom: 1px solid var(--color-text-light);
 }
 
@@ -46,7 +44,7 @@
 .lb_Table td {
   font-size: 18px;
   text-align: center;
-  color: #ffff;
+  color: var(--color-text-light);
   padding: 2px;
   padding-top: 5px;
   padding-bottom: 5px;
