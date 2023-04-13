@@ -31,7 +31,7 @@
 
 html,
 body {
-  background: var(--color-light-dark);
+  background: var(--color-dark);
   color: var(--color-text-light);
   padding: 0;
   margin: 0;
