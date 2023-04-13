@@ -3,7 +3,7 @@
      position: fixed;
      align-items: center;
      justify-content: space-between;
-     background: var(--color-dark);
+     background: var(--color-light-dark);
      width: 100%;
      padding: 13px 15px;
      z-index: 1000;
@@ -11,7 +11,6 @@
 
 #navlogo {
      font-weight: 700;
-     font-family: 'Orbitron', sans-serif;
      font-size: 25px;
      text-transform: uppercase;
      transition: background-position 275ms ease;
