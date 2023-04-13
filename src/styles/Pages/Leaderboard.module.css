@@ -1,11 +1,10 @@
 /* Leaderboard container */
 .lb_Container {
   max-width: 100%;
-  min-height: 100vh;
-  max-height: 100%;
-  background-color: var(--color-dark);
   margin: 0 auto;
-  padding: 1px;
+  min-height: 100vh;
+  background-color: var(--color-dark);
+  padding: 0px;
 }
 
 /* Leaderboard heading */
@@ -15,13 +14,14 @@
   text-align: center;
   font-family: 'Orbitron', sans-serif;
   padding: 25px;
+  padding-top: 70px;
 }
 
 /* Leaderboard table */
 .lb_Table {
   border-collapse: collapse;
   width: 100%;
-  max-width: 100%;
+  border: 1px solid var(--color-light-dark);
 }
 
 /* Leaderboard table header */
@@ -30,14 +30,16 @@
   font-weight: bold;
   text-align: center;
   padding: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: var(--color-dark);
   color: #ffff;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-text-light);
 }
 
 /* Leaderboard table rows */
 .lb_Table tr {
-  background-color: #0a0a0b;
+  background-color: #161618;
 }
 
 /* Leaderboard table cells */
@@ -46,10 +48,12 @@
   text-align: center;
   color: #ffff;
   padding: 2px;
-  border-bottom: 1px solid var(--color-light-dark);;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--color-light-dark);
 }
 
 /* Leaderboard table alternating rows */
 .lb_Table tr:nth-child(even) {
-  background-color: #161618;
+  background-color: #0a0a0b;
 }
