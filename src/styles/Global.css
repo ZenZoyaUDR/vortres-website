@@ -6,13 +6,13 @@
 :root {
   --accent-color: #385ef1;
   --accent-color-trans: rgba(56, 94, 241, 0.985);
-  --accent-color-alt: #2e334d;
+  --accent-color-alt: #7890f0;
   --color-dark: #0d0d0e;
   --color-dark-trans: rgba(13, 13, 14, 0.900);
   --color-text-light: #eaeaea;
   --color-text-dark: #8f9297;
-  --color-light-dark: #10100F;
-  --color-light-dark-trans: rgba(16, 16, 15, 0.900);
+  --color-light-dark: #141419;
+  --color-light-dark-trans: rgba(20, 20, 25, 0.900);
   --color-red: #ff4646;
   --color-shadow: rgba(0, 0, 0, 0.400);
 }

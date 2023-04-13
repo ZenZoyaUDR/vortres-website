@@ -1,18 +1,18 @@
-import Head from 'next/head'
-import style from '../styles/Pages/Home.module.css'
+import style from '../styles/Pages/Home.module.css';
+import Head from 'next/head';
 
 // API
-import APIDataSWR from '../fetch/getPlayerOnline'
+import APIDataSWR from '../fetch/getPlayerOnline';
 
 // Components
-import Loading from '../components/Loading/Loading'
-import Navbar from '../components/Navbar/Navbar'
-import HeroSection from '../components/HeroSection/HeroSection'
-import Footer from '../components/Footer/Footer'
-import OnlinePlayer from '../components/Players/OnlinePlayer'
+import Loading from '../components/Loading/Loading';
+import Navbar from '../components/Navbar/Navbar';
+import HeroSection from '../components/HeroSection/HeroSection';
+import Footer from '../components/Footer/Footer';
+import OnlinePlayer from '../components/Players/OnlinePlayer';
 
 export default function Home() {
-  const { isLoading, error } = APIDataSWR()
+  const { isLoading, error } = APIDataSWR();
 
   return (
     <>
