@@ -6,7 +6,7 @@ export default function School() {
      const handleSearch = (event) => {
           event.preventDefault();
 
-          const result = `${event.target.panjang.value} * ${event.target.lebar.value}`;
+          const result = `${event.target.panjang.value*event.target.lebar.value}`;
           setRes(result);
      }
 
