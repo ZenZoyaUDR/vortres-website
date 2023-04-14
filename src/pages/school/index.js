@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Player() {
+export default function School() {
      const [res, setRes] = useState(0);
 
      const handleSearch = (event) => {
