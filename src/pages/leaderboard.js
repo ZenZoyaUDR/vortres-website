@@ -1,12 +1,12 @@
 import style from '../styles/Pages/Leaderboard.module.css';
-import useSWR from 'swr';
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
+import useSWR from 'swr';
 
 // Components
-const Footer = dynamic(() => import('../components/Footer/Footer'));
-import Navbar from '../components/Navbar/Navbar';
-import Loading from '../components/Loading/Loading';
+const Navbar = dynamic(() => import('../components/Navbar'));
+const Footer = dynamic(() => import('../components/Footer'));
+import Loading from '../components/Loading';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function Leaderboard() {
@@ -22,6 +22,7 @@ export default function Leaderboard() {
       </Head>
 
       <Navbar />
+
       <div className={style.lb_Container}>
         <h1 className={style.lb_Heading}>Leaderboard</h1>
         <table className={style.lb_Table}>
