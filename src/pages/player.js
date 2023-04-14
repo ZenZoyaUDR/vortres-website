@@ -1,11 +1,11 @@
 import style from '../styles/Pages/Player.module.css';
 import { useState } from 'react';
-import useSWR from 'swr';
 import Head from 'next/head';
+import useSWR from 'swr';
 
 // Components
-import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
+const Navbar = dynamic(() => import('../components/Navbar'));
+const Footer = dynamic(() => import('../components/Footer'));
 
 
 export default function Player() {
