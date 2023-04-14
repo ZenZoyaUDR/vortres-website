@@ -12,13 +12,6 @@ export default function Player() {
 
      return (
           <>
-               <Head>
-                    <title>Vortres | Stats</title>
-                    <link rel="icon" href="/favicon.ico" />
-               </Head>
-
-               <Navbar />
-
                <div>
                     <form onSubmit={handleSearch}>
                          <div>
@@ -49,7 +42,6 @@ export default function Player() {
                          <div>Error</div>
                     )}
                </div>
-               <Footer />
           </>
      );
 }
