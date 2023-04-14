@@ -1,5 +1,7 @@
+import { useState } from 'react';
+
 export default function Player() {
-     const [res, setRes] = use
+     const [res, setRes] = useState(0);
 
      const handleSearch = (event) => {
           event.preventDefault();
