@@ -1,10 +1,11 @@
 import style from '../styles/Pages/Leaderboard.module.css';
 import useSWR from 'swr';
+import dynamic from 'next/dynamic'
 import Head from 'next/head';
 
 // Components
+const Footer = dynamic(() => import('../components/Footer/Footer'));
 import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
 import Loading from '../components/Loading/Loading';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
