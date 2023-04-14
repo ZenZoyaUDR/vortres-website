@@ -6,7 +6,6 @@ import Head from 'next/head';
 import APIDataSWR from '../fetch/getPlayerOnline';
 
 // Components
-const Footer = dynamic(() => import('../components/Footer/Footer'));
 const Navbar = dynamic(() => import('../components/Navbar/Navbar'));
 import Loading from '../components/Loading/Loading';
 import HeroSection from '../components/HeroSection/HeroSection';
@@ -41,7 +40,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }
