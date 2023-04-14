@@ -1,14 +1,15 @@
 import style from '../styles/Pages/Home.module.css';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
 // API
 import APIDataSWR from '../fetch/getPlayerOnline';
 
 // Components
+const Footer = dynamic(() => import('../components/Footer/Footer'));
+const Navbar = dynamic(() => import('../components/Navbar/Navbar'));
 import Loading from '../components/Loading/Loading';
-import Navbar from '../components/Navbar/Navbar';
 import HeroSection from '../components/HeroSection/HeroSection';
-import Footer from '../components/Footer/Footer';
 import OnlinePlayer from '../components/Players/OnlinePlayer';
 
 export default function Home() {
