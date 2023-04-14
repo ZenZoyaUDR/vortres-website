@@ -6,9 +6,10 @@ import Head from 'next/head';
 import APIDataSWR from '../fetch/getPlayerOnline';
 
 // Components
-const Navbar = dynamic(() => import('../components/Navbar/Navbar'));
-import Loading from '../components/Loading/Loading';
-import HeroSection from '../components/HeroSection/HeroSection';
+const Navbar = dynamic(() => import('../components/Navbar'));
+const HeroSection = dynamic(() => import('../components/HeroSection'));
+const Footer = dynamic(() => import('../components/Footer'));
+import Loading from '../components/Loading';
 import OnlinePlayer from '../components/Players/OnlinePlayer';
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
 
   return (
     <>
-      <div>{isLoading && <Loading />}</div>
+      {isLoading && <Loading />}
       <Head>
         <title>Vortres | Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -40,6 +41,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }
