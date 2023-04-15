@@ -26,8 +26,8 @@ function Navbar() {
                                    </Link>
                               </li>
                               <li>
-                                   <Link href="/projects">
-                                        Projects
+                                   <Link href="/leaderboard">
+                                        Leaderboard
                                    </Link>
                               </li>
                          </ul>
