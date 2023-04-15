@@ -2,25 +2,25 @@ import prisma from '../../../lib/prisma';
 import limiter from '../../../lib/ratelimit';
 
 export default async function handler(req, res) {
-  try {
-    await limiter(req, res);
+  limiter(req, res, () => {
+    try {
+      const players = prisma.player.findMany({
+        select: {
+          username: true,
+          level: true,
+          exp: true,
+        },
+        orderBy: {
+          level: 'desc',
+        },
+        take: 10,
+      });
 
-    const players = await prisma.player.findMany({
-      select: {
-        username: true,
-        level: true,
-        exp: true,
-      },
-      orderBy: {
-        level: 'desc',
-      },
-      take: 10,
-    });
-
-    res.status(200).json(players);
-  } catch (error) {
-    res.status(500).json({ error: 'Internal server error' });
-  } finally {
-    await prisma.$disconnect();
-  }
+      res.status(200).json(players);
+    } catch (error) {
+      res.status(500).json({ error: 'Internal server error' });
+    } finally {
+      prisma.$disconnect();
+    }
+  });
 }
