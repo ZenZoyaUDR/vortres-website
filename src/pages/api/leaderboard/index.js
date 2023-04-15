@@ -1,10 +1,7 @@
-import limiter from '../../../lib/ratelimit';
 import prisma from '../../../lib/prisma';
 
 export default async function handler(req, res) {
   try {
-    await limiter(req, res);
-
     const players = await prisma.player.findMany({
       select: {
         username: true,
