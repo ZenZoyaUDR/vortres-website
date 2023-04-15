@@ -1,4 +1,5 @@
 import style from '../styles/Pages/Player.module.css';
+import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import Head from 'next/head';
 import useSWR from 'swr';
