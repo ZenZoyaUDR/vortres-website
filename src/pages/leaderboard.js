@@ -1,15 +1,13 @@
 import style from '../styles/Pages/Leaderboard.module.css';
-import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import useSWR from 'swr';
+import prisma from '../lib/prisma';
 
 // Components
-const Navbar = dynamic(() => import('../components/Navbar'));
-const Footer = dynamic(() => import('../components/Footer'));
-import Loading from '../components/Loading';
+import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer/Footer';
+import Loading from '../components/Loading/Loading';
 
-export default function Leaderboard({ data }) {
-
+export default function Leaderboard({ players }) {
   return (
     <>
       <Head>
@@ -30,16 +28,18 @@ export default function Leaderboard({ data }) {
               <th>Exp</th>
             </tr>
           </thead>
-          <tbody>
-            {data.map((player, index) => (
-              <tr key={player.id}>
-                <td>{index + 1}</td>
-                <td data-label="Username">{player.username}</td>
-                <td data-label="Lavel">{player.level}</td>
-                <td data-label="Experience">{player.exp}</td>
-              </tr>
-            ))}
-          </tbody>
+          {players && (
+            <tbody>
+              {players.map((player, index) => (
+                <tr key={player.id}>
+                  <td>{index + 1}</td>
+                  <td data-label="Username">{player.username}</td>
+                  <td data-label="Lavel">{player.level}</td>
+                  <td data-label="Experience">{player.exp}</td>
+                </tr>
+              ))}
+            </tbody>
+          )}
         </table>
       </div>
       <Footer />
@@ -47,11 +47,31 @@ export default function Leaderboard({ data }) {
   );
 }
 
-export async function getServerSideProps() {
-  // Fetch data from external API
-  const res = await fetch(`/api/leaderboard`)
-  const data = await res.json()
+export async function getServerSideProps(context) {
+  let players = [];
 
-  // Pass data to the page via props
-  return { props: { data } }
+  try {
+    players = await prisma.player.findMany({
+      select: {
+        id: true,
+        username: true,
+        level: true,
+        exp: true,
+      },
+      orderBy: {
+        level: 'desc',
+      },
+      take: 10,
+    });
+  } catch (error) {
+    console.error(error);
+  } finally {
+    await prisma.$disconnect();
+  }
+
+  return {
+    props: {
+      players: JSON.parse(JSON.stringify(players)),
+    },
+  };
 }
