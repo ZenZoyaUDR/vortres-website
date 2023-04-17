@@ -10,7 +10,6 @@ import Loading from '../components/Loading';
 
 export default function Leaderboard({ data }) {
 
-  const test = "test";
   return (
     <>
       <Head>
@@ -32,7 +31,7 @@ export default function Leaderboard({ data }) {
             </tr>
           </thead>
           <tbody>
-            {players.map((player, index) => (
+            {data.map((player, index) => (
               <tr key={player.id}>
                 <td>{index + 1}</td>
                 <td data-label="Username">{player.username}</td>
