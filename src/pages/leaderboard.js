@@ -1,12 +1,17 @@
 import style from '../styles/Pages/Leaderboard.module.css';
 import Head from 'next/head';
-import prisma from '../lib/prisma';
 
 // Components
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Loading from '../components/Loading';
 
 export default function Leaderboard({ players }) {
+
+  if (!players) {
+    return <Loading />;
+  }
+
   return (
     <>
       <Head>
@@ -46,31 +51,22 @@ export default function Leaderboard({ players }) {
   );
 }
 
-export async function getServerSideProps(context) {
-  let players = [];
-
+export async function getServerSideProps() {
   try {
-    players = await prisma.player.findMany({
-      select: {
-        id: true,
-        username: true,
-        level: true,
-        exp: true,
+    const response = await fetch(`/api/leaderboard`);
+    const players = await response.json();
+
+    return {
+      props: {
+        players,
       },
-      orderBy: {
-        level: 'desc',
-      },
-      take: 10,
-    });
+    };
   } catch (error) {
     console.error(error);
-  } finally {
-    await prisma.$disconnect();
+    return {
+      props: {
+        players: null,
+      },
+    };
   }
-
-  return {
-    props: {
-      players: JSON.parse(JSON.stringify(players)),
-    },
-  };
 }
