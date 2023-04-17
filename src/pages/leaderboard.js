@@ -53,7 +53,7 @@ export default function Leaderboard({ players }) {
 
 export async function getServerSideProps() {
   try {
-    const response = await fetch(`/api/leaderboard`);
+    const response = await fetch(`https://vortres-dev.vercel.app/api/leaderboard`);
     const players = await response.json();
 
     return {
