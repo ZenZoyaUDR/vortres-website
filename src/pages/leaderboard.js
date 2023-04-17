@@ -8,12 +8,9 @@ const Navbar = dynamic(() => import('../components/Navbar'));
 const Footer = dynamic(() => import('../components/Footer'));
 import Loading from '../components/Loading';
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
-export default function Leaderboard() {
-  const { data: players, error } = useSWR('/api/leaderboard', fetcher);
+export default function Leaderboard({ data }) {
 
-  if (error) return <div>Failed to load leaderboard</div>;
-  if (!players) return <Loading />;
+  const test = "test";
   return (
     <>
       <Head>
@@ -49,4 +46,13 @@ export default function Leaderboard() {
       <Footer />
     </>
   );
+}
+
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`/api/leaderboard`)
+  const data = await res.json()
+
+  // Pass data to the page via props
+  return { props: { data } }
 }
