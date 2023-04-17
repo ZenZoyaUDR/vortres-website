@@ -3,9 +3,8 @@ import Head from 'next/head';
 import prisma from '../lib/prisma';
 
 // Components
-import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
-import Loading from '../components/Loading/Loading';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function Leaderboard({ players }) {
   return (
