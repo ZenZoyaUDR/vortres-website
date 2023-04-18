@@ -1,17 +1,19 @@
 import style from '../styles/Pages/Leaderboard.module.css';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
+import useSWR from 'swr';
 
 // Components
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+const Navbar = dynamic(() => import('../components/Navbar'));
+const Footer = dynamic(() => import('../components/Footer'));
 import Loading from '../components/Loading';
 
-export default function Leaderboard({ players }) {
+const fetcher = (url) => fetch(url).then((res) => res.json());
+export default function Leaderboard() {
+  const { data: players, error } = useSWR('/api/leaderboard', fetcher);
 
-  if (!players) {
-    return <Loading />;
-  }
-
+  if (error) return <div>Failed to load leaderboard</div>;
+  if (!players) return <Loading />;
   return (
     <>
       <Head>
@@ -32,41 +34,19 @@ export default function Leaderboard({ players }) {
               <th>Exp</th>
             </tr>
           </thead>
-          {players && (
-            <tbody>
-              {players.map((player, index) => (
-                <tr key={player.id}>
-                  <td>{index + 1}</td>
-                  <td data-label="Username">{player.username}</td>
-                  <td data-label="Lavel">{player.level}</td>
-                  <td data-label="Experience">{player.exp}</td>
-                </tr>
-              ))}
-            </tbody>
-          )}
+          <tbody>
+            {players.map((player, index) => (
+              <tr key={player.id}>
+                <td>{index + 1}</td>
+                <td data-label="Username">{player.username}</td>
+                <td data-label="Lavel">{player.level}</td>
+                <td data-label="Experience">{player.exp}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
       <Footer />
     </>
   );
-}
-
-export async function getServerSideProps() {
-  try {
-    const response = await fetch(`https://vortres-dev.vercel.app/api/leaderboard`);
-    const players = await response.json();
-
-    return {
-      props: {
-        players,
-      },
-    };
-  } catch (error) {
-    console.error(error);
-    return {
-      props: {
-        players: null,
-      },
-    };
-  }
 }
