@@ -1,5 +1,5 @@
-import useSWR from 'swr'
-const fetcher = (url) => fetch(url).then((res) => res.json());
+import useSWR from "swr";
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 export default function APIDataSWR() {
   const { data, error, isLoading } = useSWR(
@@ -7,5 +7,5 @@ export default function APIDataSWR() {
     fetcher
   );
 
-  return { data, error, isLoading }
+  return { data, error, isLoading };
 }

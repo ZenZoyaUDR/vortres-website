@@ -1,16 +1,16 @@
-import style from '../styles/Pages/Leaderboard.module.css';
-import dynamic from 'next/dynamic';
-import Head from 'next/head';
-import useSWR from 'swr';
+import styles from "../../styles/Pages/Leaderboard.module.css";
+import dynamic from "next/dynamic";
+import Head from "next/head";
+import useSWR from "swr";
 
 // Components
-const Navbar = dynamic(() => import('../components/Navbar'));
-const Footer = dynamic(() => import('../components/Footer'));
-import Loading from '../components/Loading';
+const Navbar = dynamic(() => import("../../components/Navbar"));
+const Footer = dynamic(() => import("../../components/Footer"));
+import Loading from "../../components/Loading";
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 export default function Leaderboard() {
-  const { data: players, error } = useSWR('/api/leaderboard', fetcher);
+  const { data: players, error } = useSWR("/api/leaderboard", fetcher);
 
   if (error) return <div>Failed to load leaderboard</div>;
   if (!players) return <Loading />;
@@ -23,9 +23,9 @@ export default function Leaderboard() {
 
       <Navbar />
 
-      <div className={style.lb_Container}>
-        <h1 className={style.lb_Heading}>Leaderboard</h1>
-        <table className={style.lb_Table}>
+      <div className={styles.lb_Container}>
+        <h1 className={styles.lb_Heading}>Leaderboard</h1>
+        <table className={styles.lb_Table}>
           <thead>
             <tr>
               <th>No</th>
@@ -35,7 +35,7 @@ export default function Leaderboard() {
             </tr>
           </thead>
           <tbody>
-            {players.map((player, index) => (
+            {players.map((player: any, index: number) => (
               <tr key={player.id}>
                 <td>{index + 1}</td>
                 <td data-label="Username">{player.username}</td>
