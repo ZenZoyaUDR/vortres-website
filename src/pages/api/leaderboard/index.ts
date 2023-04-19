@@ -1,6 +1,10 @@
-import prisma from '../../../lib/prisma';
+import { NextApiRequest, NextApiResponse } from "next";
+import prisma from "../../../lib/prisma";
 
-export default async function handler(req, res) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   try {
     const players = await prisma.player.findMany({
       select: {
@@ -9,14 +13,14 @@ export default async function handler(req, res) {
         exp: true,
       },
       orderBy: {
-        level: 'desc',
+        level: "desc",
       },
       take: 10,
     });
 
     res.status(200).json(players);
   } catch (error) {
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: "Internal server error" });
   } finally {
     await prisma.$disconnect();
   }

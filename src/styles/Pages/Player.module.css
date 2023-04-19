@@ -29,7 +29,7 @@
   background-color: #ffff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .input {
     width: 70%;
     padding: 0.2rem;

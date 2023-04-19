@@ -51,7 +51,7 @@ p.olp_title {
   color: var(--color-text-dark);
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 700px) {
   .card_container {
     display: flex;
     width: 100%;

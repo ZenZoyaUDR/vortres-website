@@ -40,7 +40,7 @@
   color: #293da1;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .error_message {
     color: var(--color-text-dark);
     font-size: 20px;

@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 
 // API
-import APIDataSWR from "../fetch/getPlayerOnline";
+import APIDataSWR from "../lib/getPlayerOnline";
 
 // Components
 const Navbar = dynamic(() => import("../components/Navbar"));

@@ -65,15 +65,3 @@
           width: 5%;
      }
 }
-
-@media screen and (max-width: 500px) {
-     /*
-     .sublineInc {
-          background: linear-gradient(to right, var(--color-shadow), var(--accent-color), var(--color-shadow));
-     }
-
-     .sublineDec {
-          background: linear-gradient(to right, var(--color-shadow), var(--accent-color), var(--color-shadow));
-     }
-*/
-}
