@@ -10,7 +10,7 @@
 }
 
 .card_inner {
-  border: 1px solid var(--color-text-light);
+  border: 1px solid var(--color-light-dark);
   background-color: var(--color-dark);
   height: 100%;
   align-items: center;
