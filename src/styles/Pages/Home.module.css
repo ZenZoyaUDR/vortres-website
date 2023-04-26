@@ -10,7 +10,7 @@
 }
 
 .card_inner {
-  border: 1px solid var(--color-light-dark);
+  border: 2px solid var(--color-light-dark);
   background-color: var(--color-dark);
   height: 100%;
   align-items: center;
@@ -21,7 +21,7 @@
 .card_inner:hover {
   border: var(--accent-color);
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
 }
 
 p.title {
