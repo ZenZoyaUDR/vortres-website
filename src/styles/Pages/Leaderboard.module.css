@@ -62,9 +62,20 @@
 
   .lb_Table td {
     display: block;
+    padding: .5rem 1rem;
   }
 
-  .lb_Table td::after {
-    content: attr(data-label);
+  .lb_Table td:first-child {
+    padding-top: 2rem;
+  }
+
+  .lb_Table td:last-child {
+    padding-bottom: 2rem;
+  }
+
+  .lb_Table td::before {
+    content: attr(data-label) ": ";
+    font-weight: 700;
+    text-transform: capitalize;
   }
 }
