@@ -66,11 +66,11 @@
   }
 
   .lb_Table td:first-child {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   .lb_Table td:last-child {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
 
   .lb_Table td::before {
