@@ -15,7 +15,7 @@ export default async function handler(
       orderBy: {
         level: "desc",
       },
-      take: 10,
+      take: 15,
     });
 
     res.status(200).json(players);
