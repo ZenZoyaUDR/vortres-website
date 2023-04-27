@@ -64,4 +64,8 @@
   .lb_Table td {
     display: block;
   }
+
+  .lb_Table td::after {
+    content: attr(data-label);
+  }
 }
