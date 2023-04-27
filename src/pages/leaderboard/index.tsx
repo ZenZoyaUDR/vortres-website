@@ -28,18 +28,18 @@ export default function Leaderboard() {
         <table className={styles.lb_Table}>
           <thead>
             <tr>
-              <th>No</th>
+              <th>Top</th>
               <th>Username</th>
-              <th>Lvl</th>
-              <th>Exp</th>
+              <th>Level</th>
+              <th>Experience</th>
             </tr>
           </thead>
           <tbody>
             {players.map((player: any, index: number) => (
               <tr key={player.id}>
-                <td>{index + 1}</td>
+                <td data-label="Top">{index + 1}</td>
                 <td data-label="Username">{player.username}</td>
-                <td data-label="Lavel">{player.level}</td>
+                <td data-label="Level">{player.level}</td>
                 <td data-label="Experience">{player.exp}</td>
               </tr>
             ))}
