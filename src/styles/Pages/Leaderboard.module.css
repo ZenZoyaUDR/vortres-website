@@ -43,7 +43,6 @@
 /* Leaderboard table cells */
 .lb_Table td {
   font-size: 18px;
-  text-align: center;
   color: var(--color-text-light);
   padding: 2px;
   padding-top: 5px;
