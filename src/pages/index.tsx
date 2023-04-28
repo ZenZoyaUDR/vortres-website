@@ -20,7 +20,7 @@ export default function Home() {
       {isLoading && <Loading />}
       <Head>
         <title>Vortres | Home</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/vortres.png" />
       </Head>
 
       <Navbar />

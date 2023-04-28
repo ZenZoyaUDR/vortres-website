@@ -18,7 +18,7 @@ export default function Leaderboard() {
     <>
       <Head>
         <title>Vortres | Leaderboard</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/vortres.png" />
       </Head>
 
       <Navbar />
