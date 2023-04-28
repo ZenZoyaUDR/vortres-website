@@ -7,11 +7,11 @@
 
 /* Leaderboard heading */
 .lb_Heading {
-  font-size: 36px;
+  font-size: 35px;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
-  padding-bottom: 30px;
-  padding-top: 50px;
+  padding-bottom: 26px;
+  padding-top: 52px;
   color: var(--color-text-light);
 }
 
