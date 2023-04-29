@@ -23,6 +23,8 @@
   border: 1px solid #000000;
   margin-right: 0.3rem;
   outline-style: none;
+  align-items: center;
+justify-content: center;
   width: 70%;
 }
 
