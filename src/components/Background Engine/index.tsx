@@ -49,7 +49,7 @@ function Background() {
               quantity: 4,
             },
             repulse: {
-              distance: 50,
+              distance: 95,
               duration: 0.4,
             },
           },
@@ -83,7 +83,7 @@ function Background() {
               enable: true,
               area: 1200,
             },
-            value: 70,
+            value: 80,
           },
           opacity: {
             value: 0.5,
