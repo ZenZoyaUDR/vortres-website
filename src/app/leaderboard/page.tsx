@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "../../styles/Pages/Leaderboard.module.css";
 import dynamic from "next/dynamic";
 import Head from "next/head";

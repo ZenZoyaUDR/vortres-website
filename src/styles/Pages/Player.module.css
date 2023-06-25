@@ -5,7 +5,6 @@
 .container_input {
   padding-top: 15vh;
   justify-content: center;
-  align-items: center;
   display: flex;
 }
 
@@ -23,8 +22,6 @@
   border: 1px solid #000000;
   margin-right: 0.3rem;
   outline-style: none;
-  align-items: center;
-justify-content: center;
   width: 70%;
 }
 
@@ -36,7 +33,7 @@ justify-content: center;
   border: none;
   border-radius: 0.10rem;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .button:hover {
