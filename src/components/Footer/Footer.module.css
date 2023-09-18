@@ -6,10 +6,10 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent);
   justify-content: center;
   align-items: center;
-  background: var(--color-dark);
+  background: var(--background);
 }
 
 .copyright {
@@ -17,5 +17,5 @@
   font-size: 15px;
   align-items: center;
   justify-content: center;
-  color: var(--color-text-light);
+  color: var(--text-light);
 }

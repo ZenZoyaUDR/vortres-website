@@ -1,5 +1,5 @@
 .error_container {
-  background: var(--color-dark);
+  background: var(--background);
   padding: 0 2rem;
   min-height: 100vh;
   padding: 1rem 0;
@@ -11,7 +11,7 @@
 }
 
 .error_code {
-  color: var(--color-text-light);
+  color: var(--text-light);
   font-size: 95px;
   font-weight: 700;
   padding-bottom: 25px;
@@ -19,7 +19,7 @@
 }
 
 .error_message {
-  color: var(--color-text-dark);
+  color: var(--text-light);
   font-size: 17px;
   font-weight: 400;
   padding-bottom: 1px;
@@ -31,7 +31,7 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
-  color: var(--accent-color);
+  color: var(--accent);
   text-transform: uppercase;
   transition: 0.2s ease-in-out;
 }
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 700px) {
   .error_message {
-    color: var(--color-text-dark);
+    color: var(--text-light);
     font-size: 20px;
     font-weight: 500;
     padding-bottom: 25px;

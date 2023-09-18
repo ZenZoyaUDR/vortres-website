@@ -4,17 +4,14 @@
 
 /* Variables */
 :root {
-  --accent-color: #385ef1;
-  --accent-color-trans: rgba(56, 94, 241, 0.985);
-  --accent-color-alt: #7890f0;
-  --color-dark: #0d0d0e;
-  --color-dark-trans: rgba(13, 13, 14, 0.900);
-  --color-text-light: #eaeaea;
-  --color-text-dark: #8f9297;
-  --color-light-dark: #141419;
-  --color-light-dark-trans: rgba(20, 20, 25, 0.900);
-  --color-red: #ff4646;
-  --color-shadow: rgba(0, 0, 0, 0.400);
+  --primary: #2045db;
+  --primary-trans: rgba(32, 69, 219, 0.985);
+  --secondary: #4d6ae2;
+  --accent: #756da2;
+  --background: #13121c;
+  --background-lighter: #1e1e30;
+  --text-light: #e2e0eb;
+  --shadow: rgba(0, 0, 0, 0.400);
 }
 
 /* Misc */
@@ -29,13 +26,13 @@
 
 html,
 body {
-  color: var(--color-text-light);
+  color: var(--text-light);
   padding: 0;
   margin: 0;
 }
 
 body {
-  background: var(--color-dark);
+  background: var(--background);
 }
 
 a {

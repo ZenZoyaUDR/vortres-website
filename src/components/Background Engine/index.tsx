@@ -28,10 +28,10 @@ function Background() {
       options={{
         background: {
           color: {
-            value: "#0d0d0e",
+            value: "#13121c",
           },
         },
-        fpsLimit: 70,
+        fpsLimit: 30,
         interactivity: {
           events: {
             onClick: {
@@ -39,7 +39,7 @@ function Background() {
               mode: "push",
             },
             onHover: {
-              enable: true,
+              enable: false,
               mode: "repulse",
             },
             resize: true,
@@ -56,10 +56,10 @@ function Background() {
         },
         particles: {
           color: {
-            value: "#385ef1",
+            value: "#0d1c58",
           },
           links: {
-            color: "#7890f0",
+            color: "#132983",
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -75,7 +75,7 @@ function Background() {
               default: "bounce",
             },
             random: false,
-            speed: 3,
+            speed: 0.5,
             straight: false,
           },
           number: {
@@ -83,7 +83,7 @@ function Background() {
               enable: true,
               area: 1200,
             },
-            value: 80,
+            value: 85,
           },
           opacity: {
             value: 0.5,

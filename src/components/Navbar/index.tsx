@@ -1,6 +1,11 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTimes,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
 import style from "./Navbar.module.css";
 
 function Navbar() {

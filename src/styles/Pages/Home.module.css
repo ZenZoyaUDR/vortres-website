@@ -10,8 +10,8 @@
 }
 
 .card_inner {
-  border: 1px solid var(--color-light-dark);
-  background-color: var(--color-dark);
+  border: 1px solid var(--background-lighter);
+  background-color: var(--background);
   height: 100%;
   align-items: center;
   padding: 25px;
@@ -19,20 +19,18 @@
 }
 
 .card_inner:hover {
-  border: var(--accent-color);
-  border-style: solid;
-  border-width: 1px;
+  border: var(--primary) 1px solid;
 }
 
 p.title {
   font-size: 20px;
   margin: auto;
-  color: var(--color-text-dark);
+  color: var(--text-light);
 }
 
 p.in {
   margin: auto;
-  color: var(--color-text-light);
+  color: var(--text-light);
 }
 
 div.olp_player {
@@ -40,7 +38,7 @@ div.olp_player {
   font-weight: 700;
   display: block;
   margin: auto;
-  color: var(--color-text-light);
+  color: var(--text-light);
 }
 
 p.olp_title {
@@ -48,7 +46,7 @@ p.olp_title {
   font-size: 15px;
   font-weight: 700;
   margin: auto;
-  color: var(--color-text-dark);
+  color: var(--text-dark);
 }
 
 @media screen and (max-width: 700px) {
