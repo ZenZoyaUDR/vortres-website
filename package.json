@@ -2,9 +2,9 @@
   "name": "vortres-website",
   "version": "snapshot-1w1v",
   "scripts": {
-    "s:dev": "next dev",
+    "start:dev": "next dev",
     "start": "next start",
-    "s:build": "next build",
+    "build": "next build",
     "lint": "next lint"
   },
   "dependencies": {
