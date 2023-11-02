@@ -2,12 +2,9 @@ import styles from "../styles/Pages/Home.module.css";
 import dynamic from "next/dynamic";
 import { Metadata } from "next";
 
-// API
-// import APIDataSWR from "../lib/getPlayerOnline";
-
 // Components
 const Footer = dynamic(() => import("../components/Footer"));
-// import OnlinePlayer from "../components/Players/OnlinePlayer";
+import Loading from "../components/Loading";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 
@@ -17,10 +14,9 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  // const { isLoading, error } = APIDataSWR();
-
   return (
     <>
+      <Loading />
       <Navbar />
       <HeroSection />
 

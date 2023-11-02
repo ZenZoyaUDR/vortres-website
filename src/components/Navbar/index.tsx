@@ -2,10 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTimes,
-  faBars,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"; // Import FontAwesome icons
 import style from "./Navbar.module.css";
 
 function Navbar() {
@@ -30,7 +27,7 @@ function Navbar() {
               <Link href="/player">Stats</Link>
             </li>
             <li>
-              <Link href="/leaderboard">Leadboard</Link>
+              <Link href="/leaderboard">Leaderboard</Link>
             </li>
           </ul>
         </div>
@@ -41,10 +38,11 @@ function Navbar() {
             setClicked(!clicked);
           }}
         >
-          <i
+          <FontAwesomeIcon
+            icon={clicked ? faTimes : faBars} // Use the FontAwesome icons
             id={style.bar}
-            className={clicked ? "fas fa-times" : "fas fa-bars"}
-          ></i>
+            size="2x"
+          />
         </div>
       </nav>
     </>
