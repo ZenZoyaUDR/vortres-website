@@ -71,7 +71,7 @@
           align-items: flex-start;
           justify-content: flex-start;
           position: fixed;
-          top: 54px;
+          top: 55px;
           right: -250px;
           width: 200px;
           max-width: 70%;
@@ -79,7 +79,7 @@
           background: var(--nav-background);
           padding: 40px 0 0 10px;
           z-index: 1000;
-          transition: 0.2s ease-in-out;
+          transition: 0.3s ease-in-out;
      }
 
      .mobileActive {
@@ -88,7 +88,7 @@
           align-items: flex-start;
           justify-content: flex-start;
           position: fixed;
-          top: 58px;
+          top: 55px;
           right: 0px;
           width: 200px;
           max-width: 70%;
