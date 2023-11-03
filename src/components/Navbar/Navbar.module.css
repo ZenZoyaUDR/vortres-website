@@ -5,13 +5,13 @@
      justify-content: space-between;
      background: var(--nav-background);
      width: 100%;
-     padding: 5px 15px;
+     padding: 10px 16px;
      z-index: 1000;
 }
 
 #navlogo {
      font-weight: 700;
-     font-size: 23px;
+     font-size: 20px;
      text-transform: uppercase;
      transition: background-position 275ms ease;
      background: linear-gradient(to right, var(--primary), var(--secondary));
@@ -46,7 +46,7 @@
 
 #navbar li a:hover::after {
      content: "";
-     width: 35%;
+     width: 40%;
      height: 2px;
      background: var(--accent);
      position: absolute;
@@ -71,7 +71,7 @@
           align-items: flex-start;
           justify-content: flex-start;
           position: fixed;
-          top: 58px;
+          top: 54px;
           right: -250px;
           width: 200px;
           max-width: 70%;
