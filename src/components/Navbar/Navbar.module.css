@@ -79,7 +79,7 @@
           background: var(--nav-background);
           padding: 40px 0 0 10px;
           z-index: 1000;
-          transition: 0.25s ease-in-out;
+          transition: 0.21s ease-in-out;
      }
 
      .mobileActive {
