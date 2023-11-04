@@ -31,7 +31,7 @@ function Background() {
             value: "#13121c",
           },
         },
-        fpsLimit: 30,
+        fpsLimit: 25,
         interactivity: {
           events: {
             onClick: {
