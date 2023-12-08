@@ -1,115 +1,118 @@
 .nav {
-     display: flex;
-     position: fixed;
-     align-items: center;
-     justify-content: space-between;
-     background: var(--nav-background);
-     width: 100%;
-     padding: 10px 16px;
-     z-index: 1000;
+  display: flex;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--nav-background);
+  width: 100%;
+  padding: 10px 16px;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 #navlogo {
-     font-weight: 700;
-     font-size: 20px;
-     text-transform: uppercase;
-     transition: background-position 275ms ease;
-     background: linear-gradient(to right, var(--primary), var(--secondary));
-     background-clip: text;
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: uppercase;
+  transition: background-position 275ms ease;
+  background: linear-gradient(to right, var(--accent), var(--secondary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #navbar {
-     display: flex;
-     align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #navbar li {
-     list-style: none;
-     padding: 0 15px;
-     position: relative;
+  list-style: none;
+  padding: 0 15px;
+  position: relative;
 }
 
 #navbar li a {
-     text-decoration: none;
-     font-size: 15px;
-     font-weight: 700;
-     color: var(--text-light);
-     text-transform: uppercase;
-     transition: 0.2s ease-in-out;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-light);
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
 }
 
 #navbar li a:hover {
-     color: var(--accent);
+  color: var(--accent);
 }
 
 #navbar li a:hover::after {
-     content: "";
-     width: 40%;
-     height: 2px;
-     background: var(--accent);
-     position: absolute;
-     bottom: -3px;
-     left: 15px;
+  content: "";
+  width: 40%;
+  height: 2px;
+  background: var(--accent);
+  position: absolute;
+  bottom: -3px;
+  left: 15px;
 }
 
 #mobile {
-     display: none;
-     cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 #mobile i {
-     color: var(--accent);
-     align-items: center;
+  color: var(--accent);
+  align-items: center;
 }
 
 @media screen and (max-width: 700px) {
-     .mobile {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          position: fixed;
-          top: 53px;
-          right: -250px;
-          width: 200px;
-          max-width: 70%;
-          height: 100%;
-          background: var(--nav-background);
-          padding: 40px 0 0 10px;
-          z-index: 1000;
-          transition: 0.21s ease-in-out;
-     }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 53px;
+    right: -250px;
+    width: 200px;
+    max-width: 70%;
+    height: 100%;
+    background: var(--nav-background);
+    padding: 40px 0 0 10px;
+    z-index: 1000;
+    transition: 0.21s ease-in-out;
+  }
 
-     .mobileActive {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          position: fixed;
-          top: 53px;
-          right: 0px;
-          width: 200px;
-          max-width: 70%;
-          height: 100%;
-          background: var(--nav-background);
-          padding: 40px 0 0 10px;
-          z-index: 1000;
-          transition: 0.2s ease-in-out;
-     }
+  .mobileActive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 53px;
+    right: 0px;
+    width: 200px;
+    max-width: 70%;
+    height: 100%;
+    background: var(--nav-background);
+    padding: 40px 0 0 10px;
+    z-index: 1000;
+    transition: 0.2s ease-in-out;
+  }
 
-     #navbar li {
-          margin-bottom: 25px;
-          z-index: 1000;
-     }
+  #navbar li {
+    margin-bottom: 25px;
+    z-index: 1000;
+  }
 
-     #mobile {
-          display: block;
-     }
+  #mobile {
+    display: block;
+  }
 
-     #mobile i {
-          font-size: 25px;
-          cursor: pointer;
-     }
+  #mobile i {
+    font-size: 25px;
+    cursor: pointer;
+  }
 }

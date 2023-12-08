@@ -1,19 +1,19 @@
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Variables */
 :root {
-  --primary: rgb(32, 69, 219);
-  --primary-trans: rgba(32, 69, 219, 0.950);
-  --secondary: #5e78e2;
-  --accent: #746ab1;
-  --background: #13121c;
-  --background-lighter: #181827;
+  --accent: #2046db;
+  --accent-transparent: #2046dbe6;
+  --secondary: #2046db;
+  --background: #000000;
+  --background-lighter: #1f2125;
   --text-light: #e2e0eb;
 
-  --nav-background: rgba(31, 31, 31, 0.98);
-  --shadow: rgba(0, 0, 0, 0.400);
+  --nav-background: #0b0c0f4b;
+  --shadow: #00000066;
 }
 
 /* Misc */
@@ -23,18 +23,15 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
 }
 
 html,
 body {
   color: var(--text-light);
+  background-color: var(--background);
   padding: 0;
   margin: 0;
-}
-
-body {
-  background: var(--background);
 }
 
 a {
