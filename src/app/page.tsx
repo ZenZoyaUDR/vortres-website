@@ -27,7 +27,7 @@ export default function HomePage() {
           loading="eager"
           className="z-0"
         />
-        <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div className="absolute inset-0 bg-black opacity-25"></div>
         <div className="container mx-auto text-center relative z-10 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-3">
             Welcome to My Server
