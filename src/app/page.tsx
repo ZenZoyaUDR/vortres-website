@@ -19,11 +19,11 @@ export default function HomePage() {
 
       <div className="relative min-h-screen flex items-center justify-center">
         <Img
-          src="/Red.webp"
+          src="/hero-bg.png"
           alt="Hero Image"
           fill={true}
           placeholder="blur"
-          blurDataURL="/Red.webp"
+          blurDataURL="/hero-bg.png"
           loading="eager"
           className="z-0"
         />
