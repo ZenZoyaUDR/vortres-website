@@ -21,7 +21,7 @@ export default function HomePage() {
         <Img
           src="/hero-bg.png"
           alt="Hero Image"
-          fill={true}
+          fill={false}
           placeholder="blur"
           blurDataURL="/hero-bg.png"
           loading="eager"
