@@ -1,5 +1,4 @@
-import dynamic from "next/dynamic";
-import Img from "next/image";
+import dynamic from "next/dynamic";import Img from "next/image";
 import { Metadata } from "next";
 
 // Components
@@ -18,15 +17,6 @@ export default function HomePage() {
       <Navbar />
 
       <div className="relative min-h-screen flex items-center justify-center">
-       // <Img
-       //  src="/hero-bg.png"
-       //   alt="Hero Image"
-       //   fill={false}
-       //   placeholder="blur"
-       //   blurDataURL="/hero-bg.png"
-       //  loading="eager"
-       //  className="z-0"
-       // />
         <div className="absolute inset-0 bg-black opacity-25"></div>
         <div className="container mx-auto text-center relative z-10 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-3">
