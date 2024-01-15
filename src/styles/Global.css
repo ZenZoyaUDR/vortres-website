@@ -1,5 +1,4 @@
-/* Tailwind */
-@tailwind base;
+/* Tailwind */@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -12,7 +11,7 @@
   --background-lighter: #1f2125;
   --text-light: #e2e0eb;
 
-  --nav-background: #0b0c0f65;
+  --nav-background: #0b0c0f;
   --shadow: #00000066;
 }
 
