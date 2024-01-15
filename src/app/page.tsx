@@ -1,4 +1,5 @@
-import dynamic from "next/dynamic";import Img from "next/image";
+import dynamic from "next/dynamic";
+import Img from "next/image";
 import { Metadata } from "next";
 
 // Components
